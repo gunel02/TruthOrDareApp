@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.app.fragment.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/navigateToRuleFragment"
+            app:destination="@id/ruleFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ruleFragment"
+        android:name="com.example.app.fragment.RuleFragment"
+        android:label="RuleFragment"
+        tools:layout="@layout/fragment_rule">
+        <action
+            android:id="@+id/navigateToSetPlayersFragment"
+            app:destination="@id/setPlayersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/setPlayersFragment"
+        android:name="com.example.app.fragment.SetPlayersFragment"
+        android:label="fragment_set_players"
+        tools:layout="@layout/fragment_set_players" />
+</navigation>

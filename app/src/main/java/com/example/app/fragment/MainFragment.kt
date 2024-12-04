@@ -35,6 +35,5 @@ class MainFragment : Fragment() {
             transaction.commit()
         }
 
-//        binding.nextToRuleButton.setOnClickListener{Navigation.findNavController(requireView()).navigate(R.id.navigateToRuleFragment)}
     }
 }

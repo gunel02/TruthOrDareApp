@@ -16,8 +16,13 @@ class PlayerRepository(private val playerDao: PlayerDao) {
         playerDao.updateUser(playersData)
     }
 
+
     suspend fun deleteUser(playersData: PlayersData) {
         playerDao.deleteUser(playersData)
+    }
+
+    suspend fun savePLayersName(playersName: PlayersData) {
+        return playerDao.savePLayersName(playersName)
     }
 
 }

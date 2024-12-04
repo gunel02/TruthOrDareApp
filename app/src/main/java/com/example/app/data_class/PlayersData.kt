@@ -10,5 +10,16 @@ import kotlinx.parcelize.Parcelize
 data class PlayersData(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
-    val name: String,
+    var name: String,
+    var gender: String = "",
 ) : Parcelable
+
+
+//test code for unique name
+//@Parcelize
+//@Entity(tableName = "user_table" , indices = [androidx.room.Index(value = ["name"], unique = true)])
+//data class PlayersData(
+//    @PrimaryKey(autoGenerate = true)
+//    val id: Int = 0,
+//    val name: String,
+//) : Parcelable

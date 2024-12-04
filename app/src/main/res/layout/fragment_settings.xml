@@ -17,30 +17,35 @@
             android:id="@+id/back_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
             android:layout_marginVertical="10dp"
             android:orientation="horizontal"
             tools:ignore="UseCompoundDrawables">
 
             <ImageView
-                android:layout_width="45dp"
-                android:layout_height="45dp"
+                android:id="@+id/icon_left_arrow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:importantForAccessibility="no"
+                android:padding="4dp"
                 android:src="@drawable/icon_left_arrow"
-                app:tint="@color/white" />
+                app:tint="@color/light_purple_color" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
+                android:paddingHorizontal="80dp"
                 android:text="Настройки"
-                android:textColor="@color/white"
+                android:textColor="@color/light_purple_color"
                 android:textSize="30sp" />
 
         </LinearLayout>
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginHorizontal="10dp"
             android:orientation="vertical">
 
             <LinearLayout
@@ -54,7 +59,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginVertical="1dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:background="@color/button_background_color" />
 
                 <TextView
@@ -68,6 +73,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/language_change_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -78,26 +84,26 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginVertical="1dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:background="@color/button_background_color" />
 
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="15dp"
-                    android:layout_weight="1"
-                    android:fontFamily="@font/regular"
-                    android:text="Язык"
-                    android:textSize="30sp" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/regular"
+                        android:text="Язык"
+                        android:textSize="30sp" />
 
-                <ImageView
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:layout_marginEnd="20dp"
-                    android:src="@drawable/image_ru"
-                    app:tint="@color/gray_white" />
-
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginHorizontal="20dp"
+                        android:importantForAccessibility="no"
+                        android:src="@drawable/icon_ru"
+                        app:tint="@color/gray_color" />
             </LinearLayout>
 
             <LinearLayout
@@ -111,7 +117,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginVertical="1dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:background="@color/button_background_color" />
 
                 <TextView
@@ -135,7 +141,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginVertical="1dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:background="@color/button_background_color" />
 
                 <TextView
@@ -159,7 +165,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginVertical="1dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:background="@color/button_background_color" />
 
                 <TextView
@@ -183,7 +189,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginVertical="1dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:background="@color/button_background_color" />
 
                 <TextView
@@ -197,6 +203,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/privacy_policy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -207,7 +214,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginVertical="1dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:background="@color/button_background_color" />
 
                 <TextView
@@ -231,10 +238,11 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginVertical="1dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:background="@color/button_background_color" />
 
-                <TextView
+                 <TextView
+                    android:id="@+id/information"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
@@ -255,7 +263,7 @@
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
                     android:layout_marginVertical="1dp"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:background="@color/button_background_color" />
 
                 <TextView

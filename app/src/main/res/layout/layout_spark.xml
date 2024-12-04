@@ -24,6 +24,7 @@
             android:textSize="30sp" />
 
 
+
         <ImageView
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -38,7 +39,7 @@
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/regular"
             android:gravity="center"
-            android:text='В этой игре представлены 5 уровней "остроты",некоторые из которых разделены на игры для пары или компании.Все что вам нужно сделать это добавить игроков и можно начинать игру.'
+            android:text="Температура поднимается,задания и вопросы становятся все более откровеннымы - ощутите всю остроту момента!"
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -63,6 +64,89 @@
             android:layout_gravity="center"
             android:layout_marginVertical="2dp"
             android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semi_bold"
+                    android:text="Для пары:"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/gray_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/semi_bold"
+                android:gravity="center"
+                android:text="НАЧАТЬ"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semi_bold"
+                    android:text="Случайный порядок"
+                    android:layout_gravity="center"
+                    android:textColor="@color/gray_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="1dp"
+        app:cardBackgroundColor="@color/background_color"
+        app:strokeColor="@color/button_background_color"
+        app:strokeWidth="4dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="2dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semi_bold"
+                    android:text="Для компании:"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="@color/gray_color"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
 
             <TextView
                 android:layout_width="match_parent"
@@ -86,8 +170,7 @@
                     android:layout_gravity="center"
                     android:layout_marginEnd="5dp"
                     android:layout_height="20dp"
-                    android:importantForAccessibility="no"
-                    app:tint="@color/white"
+                    app:tint="@color/gray_color"
                     android:src="@drawable/image_play" />
 
                 <TextView
@@ -96,7 +179,7 @@
                     android:fontFamily="@font/semi_bold"
                     android:text="Случайный порядок"
                     android:layout_gravity="center"
-                    android:textColor="@color/white"
+                    android:textColor="@color/gray_color"
                     android:textSize="15sp" />
             </LinearLayout>
         </LinearLayout>

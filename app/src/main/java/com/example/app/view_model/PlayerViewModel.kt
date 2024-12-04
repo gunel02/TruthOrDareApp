@@ -12,6 +12,7 @@ import kotlinx.coroutines.launch
 
 
 class PlayerViewModel(application: Application) : AndroidViewModel(application) {
+
     val readAllData: LiveData<List<PlayersData>>
     private val repository: PlayerRepository
 
@@ -39,11 +40,10 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
         }
     }
 
-//
-//    fun deleteAllUsers(){
-//        viewModelScope.launch(Dispatchers.IO) {
-//            repository.deleteAllUsers()
-//        }
-//    }
+    fun savePLayersName (playersName: PlayersData) {
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.savePLayersName(playersName)
+        }
+    }
 
 }

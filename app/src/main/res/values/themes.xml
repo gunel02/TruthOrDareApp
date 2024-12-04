@@ -1,9 +1,22 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.App" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="Theme.App" parent="Base.Theme.App" />
+
+
+<!--for removing alert dialog theme-->
+<!--    <style name="AlertDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">-->
+<!--        <item name="bottomSheetStyle">@style/AlertDialogSheetStyle</item>-->
+<!--    </style>-->
+<!--    <style name="AlertDialogSheetStyle" parent="Widget.Design.BottomSheet.Modal">-->
+<!--        <item name="android:background">@android:color/transparent</item>-->
+<!--    </style>-->
+
+    <style name="StatusBar" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/background_color</item>
+        <item name="android:navigationBarColor">@color/background_color</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
     </style>
 
-    <style name="Theme.App" parent="Base.Theme.App" />
 </resources>

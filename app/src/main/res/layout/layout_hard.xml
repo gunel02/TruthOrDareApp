@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/semi_bold"
             android:gravity="center"
-            android:text="Light"
+            android:text="Hard"
             android:textColor="@color/white"
             android:textSize="30sp" />
 
@@ -40,7 +40,7 @@
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/regular"
             android:gravity="center"
-            android:text='Бросьте вызов друзьям или своей второй половинке и посмотрите,как далеко они смогут зайти!'
+            android:text="Готовы добавить больше огня? Хотите узнать сокровенные тайны и проверить свою смелость - тогда вам сюда!"
             android:textColor="@color/white"
             android:textSize="15sp" />
 

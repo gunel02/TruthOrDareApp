@@ -1,30 +1,29 @@
-package com.example.app.data
+    package com.example.app.data
 
-import androidx.lifecycle.LiveData
-import androidx.room.Dao
-import androidx.room.Delete
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Query
-import androidx.room.Update
-import com.example.app.data_class.PlayersData
+    import androidx.lifecycle.LiveData
+    import androidx.room.Dao
+    import androidx.room.Delete
+    import androidx.room.Insert
+    import androidx.room.OnConflictStrategy
+    import androidx.room.Query
+    import androidx.room.Update
+    import com.example.app.data_class.PlayersData
 
-@Dao
-interface PlayerDao {
+    @Dao
+    interface PlayerDao {
+        @Insert(onConflict = OnConflictStrategy.REPLACE)
+        suspend fun addUser(playersData: PlayersData)
 
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun addUser(playersData: PlayersData): Long
+        @Update
+        suspend fun updateUser(playersData: PlayersData)
 
-    @Update
-    suspend fun updateUser(playersData: PlayersData)
+        @Delete
+        suspend fun deleteUser(playersData: PlayersData)
 
-    @Delete
-    suspend fun deleteUser(playersData: PlayersData)
+        @Query("SELECT * FROM user_table ORDER BY id ASC")
+        fun readAllData(): LiveData<List<PlayersData>>
 
-//    @Query("SELECT * FROM user_table")
-//    suspend fun deleteAllUsers()
+        @Insert(onConflict = OnConflictStrategy.REPLACE)
+        suspend fun savePLayersName(playersName: PlayersData)
 
-    @Query("SELECT * FROM user_table ORDER BY id ASC")
-    fun readAllData(): LiveData<List<PlayersData>>
-
-}
+    }

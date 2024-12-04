@@ -6,15 +6,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.app.R
+import com.example.app.databinding.FragmentHomeScreenBinding
+import com.example.app.databinding.FragmentLightBinding
 
 class LightFragment : Fragment() {
+    private lateinit var binding: FragmentLightBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_light, container, false)
+    ): View {
+
+        binding = FragmentLightBinding.inflate(inflater, container, false)
+        return binding.root
+
     }
 
 

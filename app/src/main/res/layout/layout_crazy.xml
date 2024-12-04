@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/semi_bold"
             android:gravity="center"
-            android:text="Light"
+            android:text="Crazy"
             android:textColor="@color/white"
             android:textSize="30sp" />
 
@@ -40,7 +40,7 @@
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/regular"
             android:gravity="center"
-            android:text='Бросьте вызов друзьям или своей второй половинке и посмотрите,как далеко они смогут зайти!'
+            android:text="Никаких ограничений!Дайте волю своим фантазиям - делайте и узнавайте то, чего никогда не делали и не знали раньше."
             android:textColor="@color/white"
             android:textSize="15sp" />
 
@@ -71,7 +71,7 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/semi_bold"
                 android:gravity="center"
-                android:text="НАЧАТЬ"
+                android:text="Никаких ограничений! "
                 android:textColor="@color/white"
                 android:textSize="20sp" />
 

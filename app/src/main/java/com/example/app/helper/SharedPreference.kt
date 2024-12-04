@@ -1,5 +1,4 @@
 package com.example.app.helper
-
 import android.content.Context
 import android.content.SharedPreferences
 
@@ -8,7 +7,6 @@ object SharedPreference {
     private const val SHARED_PREFERENCES_NAME = "MY_SHARED_PREFERENCES"
     private lateinit var editor: SharedPreferences.Editor
     private lateinit var sharedPreferences: SharedPreferences
-
     private const val KEY_LANGUAGE = "language"
 
     fun init(context: Context) {
@@ -17,12 +15,12 @@ object SharedPreference {
         editor = sharedPreferences.edit()
     }
 
-    fun setLang(phoneNumber: String) {
-        editor.putString(KEY_LANGUAGE, phoneNumber).apply()
+    fun setLang(language: String) {
+        editor.putString(KEY_LANGUAGE, language).apply()
     }
 
     fun getLang(): String? {
-        return sharedPreferences.getString(KEY_LANGUAGE, "en")
+        return sharedPreferences.getString(KEY_LANGUAGE, Const.ENGLISH_LANG)
     }
 
     fun clearSharedPreference() {
@@ -30,3 +28,4 @@ object SharedPreference {
     }
 
 }
+

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="370dp"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    app:cardBackgroundColor="@color/background_color"
+    app:strokeColor="@color/black">
+
+    <FrameLayout
+        android:id="@+id/error_dialog"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/bold"
+                android:text="Упс!"
+                android:textColor="@color/white"
+                android:textSize="35sp" />
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/dark_purple" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:text='Кажется,некоторые игроки остались без имен! Пожалуйста,введите имена всех игроков или удалите лишних.'
+                android:textColor="@color/gray_white"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/ok_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bold"
+                android:gravity="end"
+                android:text="OK"
+                android:textColor="@color/dark_purple"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/information_dialog"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/bold"
+                android:text="Информация"
+                android:textColor="@color/white"
+                android:textSize="35sp" />
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="5dp"
+                android:layout_marginBottom="15dp"
+                android:background="@color/dark_purple" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/regular"
+                android:text="Это приложение несет развлекательный характер, не забывайте,что это всего лишь игра!"
+                android:textColor="@color/gray_white"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/yes_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/bold"
+                android:gravity="end"
+                android:text="НЕ ЗАБУДУ"
+                android:textColor="@color/dark_purple"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+    </FrameLayout>
+</com.google.android.material.card.MaterialCardView>
+

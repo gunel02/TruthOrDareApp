@@ -5,18 +5,21 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.app.R
+import com.example.app.databinding.FragmentIceBreakingBinding
 
-
-class HardFragment : Fragment() {
+class IceBreakingFragment : Fragment() {
+    private lateinit var binding: FragmentIceBreakingBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_hard, container, false)
+    ): View {
+
+        binding = FragmentIceBreakingBinding.inflate(inflater, container, false)
+        return binding.root
+
     }
+
 
 
 }

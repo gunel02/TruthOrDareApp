@@ -8,28 +8,9 @@
     <string name="next">Next</string>
     <string name="ok_button">OK</string>
     <string name="previous">Previous</string>
-
-    <string name="description1">Description for item 1</string>
-    <string name="description2">Description for item 2</string>
-    <string name="description3">Description for item 3</string>
-
-    <string-array name="titles">
-        <item>Light</item>
-        <item>Spark</item>
-        <item>Hard</item>
-    </string-array>
-
-    <string-array name="descriptions">
-        <item>В этой игре представлены 5 уровней "остроты",некоторые из которых разделены на игры для пары или компании.Все что вам нужно сделать это добавить игроков и можно начинать игру.</item>
-        <item>В этой игре представлены 5 уровней "остроты",некоторые из которых разделены на игры для пары или компании.Все что вам нужно сделать это добавить игроков и можно начинать игру.</item>
-        <item>В этой игре представлены 5 уровней "остроты",некоторые из которых разделены на игры для пары или компании.Все что вам нужно сделать это добавить игроков и можно начинать игру.</item>
-    </string-array>
-
-    <array name="images">
-        <item>@drawable/image_play</item>
-        <item>@drawable/image_play</item>
-        <item>@drawable/image_play</item>
-    </array>
-
+    <string name="text_choose_language">Choose Language</string>
+    <string name="text_russian">Russian</string>
+    <string name="text_english">English</string>
+    <string name="text_turkmen">Turkmen</string>
 </resources>
 

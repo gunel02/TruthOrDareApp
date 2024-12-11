@@ -3,7 +3,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     id 'kotlin-parcelize'
     id 'kotlin-kapt'
-
+    alias(libs.plugins.kotlinx.serialization)
 }
 
 android {
@@ -39,6 +39,13 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    sourceSets {
+        main {
+            assets {
+                srcDirs 'src\\main\\assets'
+            }
+        }
+    }
 }
 
 dependencies {
@@ -70,12 +77,22 @@ dependencies {
     api "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.8.1"
     api "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0"
 
-
     //circle indicator
     implementation 'me.relex:circleindicator:2.1.6'
 
-
     // viewpager2
     implementation "androidx.viewpager2:viewpager2:1.1.0"
+
+
+    // viewModel
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.7"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.8.7"
+    implementation "androidx.core:core-ktx:1.15.0"
+    implementation "androidx.fragment:fragment-ktx:1.8.5"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+
+
+    //json
+    implementation libs.kotlinx.serialization.json
 
 }

@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentTransaction
 import com.example.app.fragment.MainFragment
 import com.example.app.R
 import com.example.app.databinding.ActivityMainBinding
+import com.example.app.fragment.viepager_fragments.LanguageFragment
 
 
 class MainActivity : AppCompatActivity() {
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initListener() {
-        val fragment = MainFragment()
+        val fragment = LanguageFragment()
         val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.fragment_container, fragment)
         transaction.commit()

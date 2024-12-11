@@ -46,7 +46,7 @@
             android:layout_marginBottom="20dp"
             android:fontFamily="@font/regular"
             android:gravity="center"
-            android:text='Бросьте вызов друзьям или своей второй половинке и посмотрите,как далеко они смогут зайти!'
+            android:text="Создвайте свой собственный пакет с вопросами и заданиями.Все зависит только от вашего воображения!"
             android:textColor="@color/white"
             android:textSize="15sp" />
 

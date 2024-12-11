@@ -24,7 +24,6 @@ class PlayerRepository(private val playerDao: PlayerDao) {
     suspend fun savePLayersName(playersName: PlayersData) {
         return playerDao.savePLayersName(playersName)
     }
-
 }
 
 

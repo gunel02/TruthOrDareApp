@@ -1,0 +1,40 @@
+{
+  "truth": [
+    {
+      "id": 1,
+      "question": "What is your biggest fear?"
+    },
+    {
+      "id": 2,
+      "question": "What is the most embarrassing thing you've ever done?"
+    },
+    {
+      "id": 3,
+      "question": "Have you ever lied to your best friend?"
+    },
+    {
+      "id": 4,
+      "question": "What is a secret you’ve never told anyone?"
+    }
+  ],
+  "dare": [
+    {
+      "id": 1,
+      "question": "Dance like no one is watching for 30 seconds."
+    },
+    {
+      "id": 2,
+      "question": "Sing the chorus of your favorite song out loud."
+    },
+    {
+      "id": 3,
+      "question": "Act like a cat for the next minute."
+    },
+    {
+      "id": 4,
+      "question": "Call a random contact and tell them a joke."
+    }
+  ]
+}
+  
+  

@@ -21,9 +21,6 @@ class PlayerRepository(private val playerDao: PlayerDao) {
         playerDao.deleteUser(playersData)
     }
 
-    suspend fun savePLayersName(playersName: PlayersData) {
-        return playerDao.savePLayersName(playersName)
-    }
 }
 
 

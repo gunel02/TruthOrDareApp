@@ -4,14 +4,14 @@
     android:layout_width="370dp"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="16dp"
-    app:cardBackgroundColor="@color/background_color"
+    app:cardBackgroundColor="@color/app_background"
     app:strokeColor="@color/black">
 
     <FrameLayout
         android:id="@+id/error_dialog"
         android:layout_width="match_parent"
-        android:visibility="gone"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:visibility="gone">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,11 +27,13 @@
                 android:text="Упс!"
                 android:textColor="@color/white"
                 android:textSize="35sp" />
+
             <FrameLayout
                 android:layout_width="100dp"
                 android:layout_height="5dp"
                 android:layout_marginBottom="15dp"
-                android:background="@color/dark_purple" />
+                android:background="@color/image_yellow_color" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -39,6 +41,7 @@
                 android:text='Кажется,некоторые игроки остались без имен! Пожалуйста,введите имена всех игроков или удалите лишних.'
                 android:textColor="@color/gray_white"
                 android:textSize="15sp" />
+
             <TextView
                 android:id="@+id/ok_button"
                 android:layout_width="match_parent"
@@ -47,7 +50,7 @@
                 android:fontFamily="@font/bold"
                 android:gravity="end"
                 android:text="OK"
-                android:textColor="@color/dark_purple"
+                android:textColor="@color/image_yellow_color"
                 android:textSize="25sp" />
 
         </LinearLayout>
@@ -56,8 +59,8 @@
     <FrameLayout
         android:id="@+id/information_dialog"
         android:layout_width="match_parent"
-        android:visibility="gone"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:visibility="visible">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -73,11 +76,13 @@
                 android:text="Информация"
                 android:textColor="@color/white"
                 android:textSize="35sp" />
+
             <FrameLayout
                 android:layout_width="100dp"
                 android:layout_height="5dp"
                 android:layout_marginBottom="15dp"
-                android:background="@color/dark_purple" />
+                android:background="@color/image_yellow_color" />
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -85,6 +90,7 @@
                 android:text="Это приложение несет развлекательный характер, не забывайте,что это всего лишь игра!"
                 android:textColor="@color/gray_white"
                 android:textSize="15sp" />
+
             <TextView
                 android:id="@+id/yes_button"
                 android:layout_width="match_parent"
@@ -93,7 +99,7 @@
                 android:fontFamily="@font/bold"
                 android:gravity="end"
                 android:text="НЕ ЗАБУДУ"
-                android:textColor="@color/dark_purple"
+                android:textColor="@color/image_yellow_color"
                 android:textSize="25sp" />
 
         </LinearLayout>

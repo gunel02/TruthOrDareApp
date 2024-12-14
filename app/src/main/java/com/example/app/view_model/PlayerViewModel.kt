@@ -58,11 +58,4 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
         }
     }
 
-    fun savePLayersName (playersName: PlayersData) {
-        viewModelScope.launch(Dispatchers.IO) {
-            repository.savePLayersName(playersName)
-        }
-    }
-
-
 }

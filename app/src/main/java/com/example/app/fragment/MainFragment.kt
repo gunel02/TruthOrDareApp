@@ -1,14 +1,15 @@
 package com.example.app.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
-import androidx.navigation.Navigation
-import androidx.navigation.fragment.findNavController
+import androidx.viewpager2.widget.ViewPager2
 import com.example.app.R
+import com.example.app.adapter.ScreenViewPagerAdapter
 import com.example.app.databinding.FragmentMainBinding
 
 class MainFragment : Fragment() {
@@ -21,19 +22,50 @@ class MainFragment : Fragment() {
     ): View {
 
         binding = FragmentMainBinding.inflate(inflater, container, false)
+
+//        val adapter = ScreenViewPagerAdapter(this)
+//        binding.viewPager.adapter = adapter
+//        binding.viewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
+//
+//        binding.indicator.setViewPager(binding.viewPager)
+
         initListener()
+
+
         return binding.root
     }
 
     private fun initListener() {
-        binding.nextToRuleButton.setOnClickListener {
-            val fragment = RuleFragment()
+
+        val adapter = ScreenViewPagerAdapter(this)
+        binding.viewPager.adapter = adapter
+        binding.viewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
+        binding.indicator.setViewPager(binding.viewPager)
+
+        binding.viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+                super.onPageSelected(position)
+
+                if (position == adapter.itemCount - 1) {
+                    binding.circleButton.visibility = View.GONE
+                    binding.squareButton.visibility = View.VISIBLE
+                } else {
+                    binding.circleButton.visibility = View.VISIBLE
+                    binding.squareButton.visibility = View.GONE
+                }
+            }
+        })
+
+
+
+        binding.squareButton.setOnClickListener {
+            val fragment = SetPlayersFragment()
             val transaction: FragmentTransaction =
                 requireActivity().supportFragmentManager.beginTransaction()
             transaction.add(R.id.fragment_container, fragment).addToBackStack(fragment.tag)
-            transaction.replace(R.id.fragment_container, fragment).addToBackStack(null)
             transaction.commit()
         }
+
 
     }
 }

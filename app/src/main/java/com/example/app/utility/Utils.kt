@@ -6,7 +6,7 @@ import com.example.app.models.GetQuestionsModel
 import kotlinx.serialization.json.Json
 
 object Utils {
-    fun loadJSONFromAsset(context: Context, fileName: String): String? {
+    private fun loadJSONFromAsset(context: Context, fileName: String): String? {
         return try {
             context.assets.open(fileName).use { inputStream ->
                 val size = inputStream.available()
@@ -19,6 +19,7 @@ object Utils {
             null
         }
     }
+
 
     fun parseQuestionsJSON(context: Context): GetQuestionsModel? {
         return try {

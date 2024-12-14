@@ -94,14 +94,14 @@ class SetPlayersFragment : Fragment() {
 
     @SuppressLint("NotifyDataSetChanged")
     private fun initListener() {
-        binding.floatingActionButtonPlus.setOnClickListener {
+        binding.addButton.setOnClickListener {
             val newPlayer = PlayersData(0, "")
             usersList.add(newPlayer)
             adapter.notifyItemInserted(usersList.size - 1)
             addUserName(newPlayer)
         }
 
-        binding.floatingActionButtonPlay.setOnClickListener {
+        binding.playButton.setOnClickListener {
             if (areAllPlayerNamesValid()) {
                 usersList.forEach { playerData ->
                     updatePlayer(playerData)

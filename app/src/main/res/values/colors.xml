@@ -13,33 +13,10 @@
     <color name="dark_purple">#460628</color>
     <color name="ripple_color">#3700B3</color>
     <color name="blue_ribbon_color">#0067E6</color>
-
-
-<!--    <color name="accent_color">#FF5722</color>-->
-<!--    <color name="accent_color_teal">#00BCD4</color>-->
-<!--    <color name="yellow">#FFC107</color>-->
-<!--    <color name="purple">#9C27B0</color>-->
-<!--    <color name="blue">#03A9F4</color>-->
-
-<!--        <color name="accent_color">#FF5722</color> &lt;!&ndash; Softened deep orange &ndash;&gt;-->
-<!--        <color name="yellow">#FFEB3B</color> &lt;!&ndash; Softer yellow &ndash;&gt;-->
-<!--        <color name="blue">#2196F3</color> &lt;!&ndash; Slightly toned down blue &ndash;&gt;-->
-
-<!--        <color name="background_color">#1A1A1D</color> &lt;!&ndash; Dark background &ndash;&gt;-->
-        <color name="accent_color">#FF4757</color> <!-- Bold red accent -->
-        <color name="blue">#1E90FF</color> <!-- Bright blue -->
-        <color name="yellow">#FFEB3B</color> <!-- Vibrant yellow -->
-    <color name="gradient">#4D000000</color>
-    <color name="trans_grad">#00000000</color>
-    <color name="blue_color">#2c6fbb</color>
-
-
-
-    <color name="white_transparent">#1AFFFFFF</color>
-
-
-
-
-
+    <color name="app_background">#222222</color>
+    <color name="dirty_white">#ECECEC</color>
+    <color name="image_yellow_color">#FFC107</color>
+    <color name="dark_yellow_color">#FFB300</color>
+    <color name="light_gray_color">#646464</color>
 
 </resources>

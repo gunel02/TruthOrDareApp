@@ -1,31 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/mainFragment3">
 
     <fragment
-        android:id="@+id/mainFragment"
+        android:id="@+id/mainFragment3"
         android:name="com.example.app.fragment.MainFragment"
-        android:label="MainFragment"
-        tools:layout="@layout/fragment_main">
+        android:label="MainFragment" >
         <action
-            android:id="@+id/navigateToRuleFragment"
-            app:destination="@id/ruleFragment" />
+            android:id="@+id/action_mainFragment3_to_letsStartFragment"
+            app:destination="@id/letsStartFragment" />
+        <action
+            android:id="@+id/action_mainFragment3_to_welcomeToAppFragment"
+            app:destination="@id/welcomeToAppFragment" />
     </fragment>
     <fragment
-        android:id="@+id/ruleFragment"
-        android:name="com.example.app.fragment.RuleFragment"
-        android:label="RuleFragment"
-        tools:layout="@layout/fragment_rule">
-        <action
-            android:id="@+id/navigateToSetPlayersFragment"
-            app:destination="@id/setPlayersFragment" />
-    </fragment>
+        android:id="@+id/welcomeToAppFragment"
+        android:name="com.example.app.fragment.WelcomeToAppFragment"
+        android:label="fragment_introduction"
+        tools:layout="@layout/fragment_introduction" />
     <fragment
-        android:id="@+id/setPlayersFragment"
-        android:name="com.example.app.fragment.SetPlayersFragment"
-        android:label="fragment_set_players"
-        tools:layout="@layout/fragment_set_players" />
+        android:id="@+id/letsStartFragment"
+        android:name="com.example.app.fragment.LetsStartFragment"
+        android:label="LetsStartFragment" />
 </navigation>

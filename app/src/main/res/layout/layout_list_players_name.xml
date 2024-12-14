@@ -1,22 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/background_color"
     android:orientation="vertical"
+    app:cardBackgroundColor="@color/light_gray_color"
+    app:cardCornerRadius="12dp"
+    app:strokeColor="@android:color/transparent"
+    app:strokeWidth="0dp"
+    android:layout_marginBottom="10dp"
     tools:context=".fragment.SetPlayersFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:padding="2dp"
         android:orientation="vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:padding="10dp"
             android:orientation="horizontal">
 
             <FrameLayout
@@ -25,7 +31,7 @@
                 android:layout_gravity="center"
                 android:layout_marginVertical="1dp"
                 android:layout_marginStart="10dp"
-                android:background="@color/button_background_color" />
+                android:background="@color/dark_yellow_color" />
 
 
             <ImageView
@@ -37,7 +43,7 @@
                 android:layout_gravity="center"
                 android:importantForAccessibility="no"
                 android:src="@drawable/image_man"
-                app:tint="@color/gray_color" />
+                app:tint="@color/app_background" />
 
             <ImageView
                 android:id="@+id/icon_women"
@@ -48,7 +54,7 @@
                 android:layout_gravity="center"
                 android:importantForAccessibility="no"
                 android:src="@drawable/image_women"
-                app:tint="@color/gray_color" />
+                app:tint="@color/app_background" />
 
             <EditText
                 android:id="@+id/player_name"
@@ -64,8 +70,8 @@
                 android:focusableInTouchMode="true"
                 android:importantForAccessibility="yes"
                 android:inputType="text"
-                android:textColor="@color/white"
-                android:textColorHint="@color/dark_purple"
+                android:textColor="@color/image_yellow_color"
+                android:textColorHint="@color/dark_yellow_color"
                 android:textSize="30sp" />
 
             <ImageView
@@ -75,10 +81,9 @@
                 android:layout_gravity="center"
                 android:layout_marginEnd="20dp"
                 android:importantForAccessibility="no"
-                android:src="@drawable/image_close"
-                app:tint="@color/gray_white" />
+                android:src="@drawable/icon_close"
+                app:tint="@color/app_background" />
         </LinearLayout>
     </LinearLayout>
 
-
-</LinearLayout>
+</com.google.android.material.card.MaterialCardView>

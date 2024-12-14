@@ -3,7 +3,6 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import androidx.fragment.app.viewModels
@@ -47,22 +46,19 @@ class StartFragment : Fragment() {
     }*/
     private fun displayName() {
         playerViewModel.readAllData.observe(viewLifecycleOwner) { players ->
-            var result = arguments?.getString("")
+            val result = arguments?.getString("")
             binding.getName.text = result
 
             if (players.isNotEmpty()) {
                 val currentPlayer = players[playerViewModel.currentPlayerIndex]
                 binding.getName.text = "${currentPlayer.name}"
             }
-
         }
     }
 
     private fun initListener() {
         playerViewModel.readAllData.observe(viewLifecycleOwner) { players ->
             if (players.isNotEmpty()) {
-
-
                 val currentPlayer = players[playerViewModel.currentPlayerIndex]
                 binding.getName.text = "Player: ${currentPlayer.name}"
             }
@@ -71,13 +67,8 @@ class StartFragment : Fragment() {
         binding.trueButton.setOnClickListener {
             val truthQuestions = playerViewModel.questionsModel?.truth ?: emptyList()
             if (truthQuestions.isNotEmpty()) {
-
-                val inflater = layoutInflater.inflate(R.layout.fragment_true_questions, null)
-                var text = inflater.findViewById<TextView>(R.id.questions)
-
                 val question = truthQuestions[playerViewModel.currentQuestionIndex]?.question
-                text.text = question
-
+                binding.getName.text = question
 
                 playerViewModel.currentQuestionIndex =
                     (playerViewModel.currentQuestionIndex + 1) % truthQuestions.size
@@ -88,7 +79,7 @@ class StartFragment : Fragment() {
             val dareQuestions = playerViewModel.questionsModel?.dare ?: emptyList()
             if (dareQuestions.isNotEmpty()) {
                 val task = dareQuestions[playerViewModel.currentQuestionIndex]?.question
-                binding.getName.text = task
+                binding.getName.text = task // this sets to name - wrong
 
                 playerViewModel.currentQuestionIndex =
                     (playerViewModel.currentQuestionIndex + 1) % dareQuestions.size
@@ -107,9 +98,6 @@ class StartFragment : Fragment() {
             .addToBackStack(null)
             .commit()
     }
-
-
-
 }
 
 

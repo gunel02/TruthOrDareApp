@@ -24,7 +24,6 @@ class TrueQuestionsFragment : Fragment() {
         binding = FragmentTrueQuestionsBinding.inflate(inflater, container, false)
 
         initListener()
-
         return binding.root
     }
 

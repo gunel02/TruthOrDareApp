@@ -3,12 +3,12 @@ package com.example.app.adapter
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.app.fragment.LetsStartFragment
-import com.example.app.fragment.MainFragment
+import com.example.app.fragment.OnBoardingFragment
 import com.example.app.fragment.WelcomeToAppFragment
 import com.example.app.fragment.viepager_fragments.IntroductionFragment
 
-class ScreenViewPagerAdapter(private val mainFragment: MainFragment) :
-    FragmentStateAdapter(mainFragment) {
+class ScreenViewPagerAdapter(private val onBoardingFragment: OnBoardingFragment) :
+    FragmentStateAdapter(onBoardingFragment) {
 
     private val pageSize = 3
 

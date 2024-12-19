@@ -1,27 +1,27 @@
 package com.example.app.fragment
 
+import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
 import androidx.viewpager2.widget.ViewPager2
-import com.example.app.R
+import com.example.app.activity.MainActivity
 import com.example.app.adapter.ScreenViewPagerAdapter
-import com.example.app.databinding.FragmentMainBinding
+import com.example.app.databinding.FragmentOnBoardingBinding
+import com.example.app.helper.SharedPreference
 
-class MainFragment : Fragment() {
+class OnBoardingFragment : Fragment() {
 
-    private lateinit var binding: FragmentMainBinding
+    private lateinit var binding: FragmentOnBoardingBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
 
-        binding = FragmentMainBinding.inflate(inflater, container, false)
+        binding = FragmentOnBoardingBinding.inflate(inflater, container, false)
 
         initListener()
 
@@ -56,11 +56,9 @@ class MainFragment : Fragment() {
         }
 
         binding.squareButton.setOnClickListener {
-            val fragment = SetPlayersFragment()
-            val transaction: FragmentTransaction =
-                requireActivity().supportFragmentManager.beginTransaction()
-            transaction.add(R.id.fragment_container, fragment).addToBackStack(fragment.tag)
-            transaction.commit()
+            SharedPreference.setIsFirstOpen(false)
+            startActivity(Intent(activity, MainActivity::class.java))
+            activity?.finish()
         }
     }
 

@@ -42,6 +42,7 @@ import android.os.Handler
 import android.os.Looper
 import androidx.appcompat.app.AppCompatActivity
 import com.example.app.databinding.ActivitySplashScreenBinding
+import com.example.app.helper.SharedPreference
 
 @SuppressLint("CustomSplashScreen")
 class SplashScreenActivity : AppCompatActivity() {
@@ -73,7 +74,16 @@ class SplashScreenActivity : AppCompatActivity() {
                     binding.progressBar.progress = currentProgress
                     handler.postDelayed(this, progressInterval.toLong())
                 } else {
-                    startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
+                    if (SharedPreference.getIsFirstOpen()) {
+                        startActivity(
+                            Intent(
+                                this@SplashScreenActivity,
+                                OnBoardingActivity::class.java
+                            )
+                        )
+                    } else {
+                        startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
+                    }
                     finish()
                 }
             }

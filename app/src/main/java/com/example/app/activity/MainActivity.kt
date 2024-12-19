@@ -3,7 +3,6 @@ package com.example.app.activity
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
-import com.example.app.fragment.MainFragment
 import com.example.app.R
 import com.example.app.databinding.ActivityMainBinding
 import com.example.app.fragment.viepager_fragments.LanguageFragment
@@ -32,10 +31,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initListener() {
-        val fragment = LanguageFragment()
-        val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
-        transaction.replace(R.id.fragment_container, fragment)
-        transaction.commit()
+//        val fragment = LanguageFragment()
+//        val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
+//        transaction.replace(R.id.fragment_container, fragment)
+//        transaction.commit()
 
     }
 }

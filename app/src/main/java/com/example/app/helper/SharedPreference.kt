@@ -1,4 +1,5 @@
 package com.example.app.helper
+
 import android.content.Context
 import android.content.SharedPreferences
 
@@ -8,6 +9,7 @@ object SharedPreference {
     private lateinit var editor: SharedPreferences.Editor
     private lateinit var sharedPreferences: SharedPreferences
     private const val KEY_LANGUAGE = "language"
+    private const val KEY_IS_FIRST_OPEN = "is_first_open"
 
     fun init(context: Context) {
         sharedPreferences =
@@ -21,6 +23,14 @@ object SharedPreference {
 
     fun getLang(): String? {
         return sharedPreferences.getString(KEY_LANGUAGE, Const.ENGLISH_LANG)
+    }
+
+    fun setIsFirstOpen(isFirst: Boolean) {
+        editor.putBoolean(KEY_IS_FIRST_OPEN, isFirst).apply()
+    }
+
+    fun getIsFirstOpen(): Boolean {
+        return sharedPreferences.getBoolean(KEY_IS_FIRST_OPEN, false)
     }
 
     fun clearSharedPreference() {

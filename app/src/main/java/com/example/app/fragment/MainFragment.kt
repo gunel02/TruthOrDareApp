@@ -23,20 +23,12 @@ class MainFragment : Fragment() {
 
         binding = FragmentMainBinding.inflate(inflater, container, false)
 
-//        val adapter = ScreenViewPagerAdapter(this)
-//        binding.viewPager.adapter = adapter
-//        binding.viewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
-//
-//        binding.indicator.setViewPager(binding.viewPager)
-
         initListener()
-
 
         return binding.root
     }
 
     private fun initListener() {
-
         val adapter = ScreenViewPagerAdapter(this)
         binding.viewPager.adapter = adapter
         binding.viewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
@@ -56,7 +48,12 @@ class MainFragment : Fragment() {
             }
         })
 
-
+        binding.circleButton.setOnClickListener {
+            val currentItem = binding.viewPager.currentItem
+            if (currentItem < adapter.itemCount - 1) {
+                binding.viewPager.setCurrentItem(currentItem + 1, true)
+            }
+        }
 
         binding.squareButton.setOnClickListener {
             val fragment = SetPlayersFragment()
@@ -65,7 +62,7 @@ class MainFragment : Fragment() {
             transaction.add(R.id.fragment_container, fragment).addToBackStack(fragment.tag)
             transaction.commit()
         }
-
-
     }
+
 }
+

@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">App</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="first_fragment_label">First Fragment</string>
@@ -12,5 +11,11 @@
     <string name="text_russian">Russian</string>
     <string name="text_english">English</string>
     <string name="text_turkmen">Turkmen</string>
+    <string name="text_fun">Fun</string>
+    <string name="text_crazy">Crazy</string>
+    <string name="text_extreme">Extreme</string>
+    <string name="text_party_mode">Party Mode</string>
+    <string name="text_custom_pack">Custom Pack</string>
+
 </resources>
 

@@ -11,7 +11,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="center_horizontal|top"
         android:background="@drawable/circular_background"
-        android:translationY="-325dp"
+        android:translationY="-310dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

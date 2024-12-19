@@ -15,13 +15,3 @@ data class PlayersData(
 ) : Parcelable
 
 
-
-
-//test code for unique name
-//@Parcelize
-//@Entity(tableName = "user_table" , indices = [androidx.room.Index(value = ["name"], unique = true)])
-//data class PlayersData(
-//    @PrimaryKey(autoGenerate = true)
-//    val id: Int = 0,
-//    val name: String,
-//) : Parcelable

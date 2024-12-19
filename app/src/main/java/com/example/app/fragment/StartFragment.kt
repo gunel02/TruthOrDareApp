@@ -1,5 +1,6 @@
 package com.example.app.fragment
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -53,6 +54,9 @@ class StartFragment : Fragment() {
                 val currentPlayer = players[playerViewModel.currentPlayerIndex]
                 binding.getName.text = "${currentPlayer.name}"
             }
+            else{
+                binding.getName.text = "Player: $result"
+            }
         }
     }
 
@@ -79,7 +83,7 @@ class StartFragment : Fragment() {
             val dareQuestions = playerViewModel.questionsModel?.dare ?: emptyList()
             if (dareQuestions.isNotEmpty()) {
                 val task = dareQuestions[playerViewModel.currentQuestionIndex]?.question
-                binding.getName.text = task // this sets to name - wrong
+                binding.getName.text = task
 
                 playerViewModel.currentQuestionIndex =
                     (playerViewModel.currentQuestionIndex + 1) % dareQuestions.size

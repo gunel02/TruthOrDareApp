@@ -67,6 +67,30 @@ class SplashScreenActivity : AppCompatActivity() {
 
         var currentProgress = 0
 
+//        val runnable = object : Runnable {
+//            override fun run() {
+//                if (currentProgress < maxProgress) {
+//                    currentProgress += increment
+//                    binding.progressBar.progress = currentProgress
+//                    handler.postDelayed(this, progressInterval.toLong())
+//                } else {
+//                    if (SharedPreference.getIsFirstOpen()) {
+//                        startActivity(
+//                            Intent(
+//                                this@SplashScreenActivity,
+//                                OnBoardingActivity::class.java
+//                            )
+//                        )
+//                    } else {
+//                        startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
+//                    }
+//                    finish()
+//                }
+//            }
+//        }
+//        handler.post(runnable)
+
+//        test code
         val runnable = object : Runnable {
             override fun run() {
                 if (currentProgress < maxProgress) {
@@ -74,21 +98,13 @@ class SplashScreenActivity : AppCompatActivity() {
                     binding.progressBar.progress = currentProgress
                     handler.postDelayed(this, progressInterval.toLong())
                 } else {
-                    if (SharedPreference.getIsFirstOpen()) {
-                        startActivity(
-                            Intent(
-                                this@SplashScreenActivity,
-                                OnBoardingActivity::class.java
-                            )
-                        )
-                    } else {
-                        startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
-                    }
+                    startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
                     finish()
                 }
             }
         }
         handler.post(runnable)
+
     }
 
     override fun onDestroy() {

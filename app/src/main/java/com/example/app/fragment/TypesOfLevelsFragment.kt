@@ -54,7 +54,7 @@ class TypesOfLevelsFragment : Fragment() {
         }
 
         binding.settingsButton.setOnClickListener{
-            val fragment = FriendlyFireFragment()
+            val fragment = SettingsFragment()
             val transaction = requireActivity().supportFragmentManager.beginTransaction()
             transaction.add(R.id.fragment_container, fragment).addToBackStack(fragment.tag)
             transaction.commit()

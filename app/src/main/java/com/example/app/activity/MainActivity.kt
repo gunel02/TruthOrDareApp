@@ -31,10 +31,10 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initListener() {
-//        val fragment = LanguageFragment()
-//        val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
-//        transaction.replace(R.id.fragment_container, fragment)
-//        transaction.commit()
+        val fragment = LanguageFragment()
+        val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.fragment_container, fragment)
+        transaction.commit()
 
     }
 }

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
+import com.example.app.R
 import com.example.app.activity.MainActivity
 import com.example.app.adapter.ScreenViewPagerAdapter
 import com.example.app.databinding.FragmentOnBoardingBinding
@@ -60,7 +61,12 @@ class OnBoardingFragment : Fragment() {
             startActivity(Intent(activity, MainActivity::class.java))
             activity?.finish()
         }
+
+        binding.skipButton.setOnClickListener {
+            binding.viewPager.setCurrentItem(adapter.itemCount - 1, true)
+        }
     }
+
 
 }
 

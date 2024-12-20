@@ -185,7 +185,7 @@ class PlayersNameAdapter(
             holder.iconMan.setColorFilter(
                 ContextCompat.getColor(
                     holder.itemView.context,
-                    R.color.white
+                    R.color.image_yellow_color
                 )
             )
             holder.iconWomen.setColorFilter(
@@ -204,7 +204,7 @@ class PlayersNameAdapter(
             holder.iconWomen.setColorFilter(
                 ContextCompat.getColor(
                     holder.itemView.context,
-                    R.color.white
+                    R.color.image_yellow_color
                 )
             )
         }
@@ -215,7 +215,7 @@ class PlayersNameAdapter(
                 holder.iconMan.setColorFilter(
                     ContextCompat.getColor(
                         holder.itemView.context,
-                        R.color.white
+                        R.color.image_yellow_color
                     )
                 )
                 holder.iconWomen.setColorFilter(
@@ -231,7 +231,7 @@ class PlayersNameAdapter(
                 holder.iconWomen.setColorFilter(
                     ContextCompat.getColor(
                         holder.itemView.context,
-                        R.color.white
+                        R.color.image_yellow_color
                     )
                 )
                 holder.iconMan.setColorFilter(

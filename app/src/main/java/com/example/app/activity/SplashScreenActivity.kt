@@ -1,38 +1,3 @@
-//package com.example.app.activity
-//
-//import android.annotation.SuppressLint
-//import android.content.Intent
-//import android.os.Bundle
-//import android.os.Handler
-//import android.os.Looper
-//import androidx.appcompat.app.AppCompatActivity
-//import com.example.app.R
-//import com.example.app.databinding.ActivityMainBinding
-//import com.example.app.databinding.ActivitySplashScreenBinding
-//
-//@SuppressLint("CustomSplashScreen")
-//class SplashScreenActivity : AppCompatActivity() {
-//
-//    private lateinit var binding: ActivitySplashScreenBinding
-//
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        binding = ActivitySplashScreenBinding.inflate(layoutInflater)
-//        setContentView(binding.root)
-//
-//
-////        setContentView(R.layout.activity_splash_screen)
-////
-////        startActivity(Intent(this, MainActivity::class.java))
-////
-//
-//        Handler(Looper.getMainLooper()).postDelayed({
-//            startActivity(Intent(this, MainActivity::class.java))
-//            finish()
-//        }, 6000)
-//    }
-//}
-
 package com.example.app.activity
 
 import android.annotation.SuppressLint
@@ -67,30 +32,6 @@ class SplashScreenActivity : AppCompatActivity() {
 
         var currentProgress = 0
 
-//        val runnable = object : Runnable {
-//            override fun run() {
-//                if (currentProgress < maxProgress) {
-//                    currentProgress += increment
-//                    binding.progressBar.progress = currentProgress
-//                    handler.postDelayed(this, progressInterval.toLong())
-//                } else {
-//                    if (SharedPreference.getIsFirstOpen()) {
-//                        startActivity(
-//                            Intent(
-//                                this@SplashScreenActivity,
-//                                OnBoardingActivity::class.java
-//                            )
-//                        )
-//                    } else {
-//                        startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
-//                    }
-//                    finish()
-//                }
-//            }
-//        }
-//        handler.post(runnable)
-
-//        test code
         val runnable = object : Runnable {
             override fun run() {
                 if (currentProgress < maxProgress) {
@@ -98,12 +39,22 @@ class SplashScreenActivity : AppCompatActivity() {
                     binding.progressBar.progress = currentProgress
                     handler.postDelayed(this, progressInterval.toLong())
                 } else {
-                    startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
+                    if (SharedPreference.getIsFirstOpen()) {
+                        startActivity(
+                            Intent(
+                                this@SplashScreenActivity,
+                                OnBoardingActivity::class.java
+                            )
+                        )
+                    } else {
+                        startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
+                    }
                     finish()
                 }
             }
         }
         handler.post(runnable)
+
 
     }
 

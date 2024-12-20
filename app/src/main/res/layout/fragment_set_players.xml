@@ -39,6 +39,7 @@
             app:layout_constraintBottom_toTopOf="@id/buttons"
             app:layout_constraintTop_toBottomOf="@id/textView"
             tools:listitem="@layout/layout_list_players_name" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -54,6 +55,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
+<!--    todo change "add" and "play" buttons -->
         <com.example.app.widgets.RippleEffect
             android:layout_width="150dp"
             android:layout_height="50dp"
@@ -77,6 +79,7 @@
                     app:tint="@color/app_background" />
 
             </com.google.android.material.card.MaterialCardView>
+
         </com.example.app.widgets.RippleEffect>
 
         <com.example.app.widgets.RippleEffect
@@ -100,6 +103,9 @@
                     app:tint="@color/app_background" />
 
             </com.google.android.material.card.MaterialCardView>
+
         </com.example.app.widgets.RippleEffect>
+
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

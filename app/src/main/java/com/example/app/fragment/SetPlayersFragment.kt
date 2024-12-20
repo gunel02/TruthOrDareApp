@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.Window
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import androidx.fragment.app.viewModels
@@ -24,8 +25,7 @@ import kotlinx.coroutines.launch
 
 class SetPlayersFragment : Fragment() {
 
-    private var _binding: FragmentSetPlayersBinding? = null
-    private val binding get() = _binding!!
+    private var binding: FragmentSetPlayersBinding? = null
 
     private var usersList: MutableList<PlayersData> = mutableListOf()
 
@@ -37,9 +37,9 @@ class SetPlayersFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
+    ): ConstraintLayout? {
 
-        _binding = FragmentSetPlayersBinding.inflate(inflater, container, false)
+        binding = FragmentSetPlayersBinding.inflate(inflater, container, false)
 
         playerViewModel.readAllData.observe(viewLifecycleOwner) { players ->
             usersList.clear()
@@ -54,7 +54,7 @@ class SetPlayersFragment : Fragment() {
 
         setUpRecyclerView()
         initListener()
-        return binding.root
+        return binding?.root
     }
 
     private fun showAlertDialog() {
@@ -75,9 +75,9 @@ class SetPlayersFragment : Fragment() {
     }
 
     private fun setUpRecyclerView() {
-        binding.recyclerView.setHasFixedSize(true)
-        binding.recyclerView.adapter = adapter
-        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        binding?.recyclerView?.setHasFixedSize(true)
+        binding?.recyclerView?.adapter = adapter
+        binding?.recyclerView?.layoutManager = LinearLayoutManager(requireContext())
     }
 
     private fun addUserName(playerData: PlayersData) {
@@ -94,14 +94,14 @@ class SetPlayersFragment : Fragment() {
 
     @SuppressLint("NotifyDataSetChanged")
     private fun initListener() {
-        binding.addButton.setOnClickListener {
+        binding?.addButton?.setOnClickListener {
             val newPlayer = PlayersData(0, "")
             usersList.add(newPlayer)
             adapter.notifyItemInserted(usersList.size - 1)
             addUserName(newPlayer)
         }
 
-        binding.playButton.setOnClickListener {
+        binding?.playButton?.setOnClickListener {
             if (areAllPlayerNamesValid()) {
                 usersList.forEach { playerData ->
                     updatePlayer(playerData)
@@ -132,7 +132,7 @@ class SetPlayersFragment : Fragment() {
 
     override fun onDestroyView() {
         super.onDestroyView()
-        _binding = null
+        binding = null
     }
 
 }

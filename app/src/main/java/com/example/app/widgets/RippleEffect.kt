@@ -21,6 +21,7 @@ class RippleEffect @JvmOverloads constructor(
                 MotionEvent.ACTION_DOWN -> {
                     animateAlpha(0.5f)
                 }
+
                 MotionEvent.ACTION_UP, MotionEvent.ACTION_CANCEL -> {
                     animateAlpha(1f)
                 }

@@ -7,10 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
-import com.example.app.activity.MainActivity
-import com.example.app.adapter.ScreenViewPagerAdapter
+import com.example.app.activity.HomeActivity
+import com.example.app.adapter.ViewPagerAdapter
 import com.example.app.databinding.FragmentOnBoardingBinding
-import com.example.app.helper.SharedPreference
 
 class OnBoardingFragment : Fragment() {
 
@@ -29,7 +28,7 @@ class OnBoardingFragment : Fragment() {
     }
 
     private fun initListener() {
-        val adapter = ScreenViewPagerAdapter(this)
+        val adapter = ViewPagerAdapter(this)
         binding.viewPager.adapter = adapter
         binding.viewPager.orientation = ViewPager2.ORIENTATION_HORIZONTAL
         binding.indicator.setViewPager(binding.viewPager)
@@ -37,6 +36,14 @@ class OnBoardingFragment : Fragment() {
         binding.viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
+
+                if (position == adapter.itemCount - 1) {
+                    binding.skipButton.visibility = View.GONE
+                    binding.skipButton.isClickable = false
+                } else {
+                    binding.skipButton.visibility = View.VISIBLE
+                    binding.skipButton.isClickable = true
+                }
 
                 if (position == adapter.itemCount - 1) {
                     binding.circleButton.visibility = View.GONE
@@ -56,16 +63,15 @@ class OnBoardingFragment : Fragment() {
         }
 
         binding.squareButton.setOnClickListener {
-            startActivity(Intent(activity, MainActivity::class.java))
+            startActivity(Intent(activity, HomeActivity::class.java))
             activity?.finish()
         }
 
         binding.skipButton.setOnClickListener {
-//            todo eger on boarding 3 fragmentda bolsa "SKIP" botton will be invisible and do not touchable
+////            todo eger on boarding 3 fragmentda bolsa "SKIP" botton will be invisible and do not touchable - done
             binding.viewPager.setCurrentItem(adapter.itemCount - 1, true)
         }
     }
-
 
 }
 

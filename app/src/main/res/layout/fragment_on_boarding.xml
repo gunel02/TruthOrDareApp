@@ -22,6 +22,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="5dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
@@ -37,6 +39,7 @@
             android:textColor="@color/app_background"
             android:textSize="15sp"
             android:textStyle="bold"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@id/indicator"
             app:layout_constraintStart_toStartOf="parent" />
@@ -86,7 +89,6 @@
                 android:id="@+id/square_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="15dp"
                 android:visibility="visible"
                 app:cardBackgroundColor="@color/app_background"
                 app:cardCornerRadius="10dp"

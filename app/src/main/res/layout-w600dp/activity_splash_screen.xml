@@ -49,9 +49,7 @@
                 android:layout_gravity="center"
                 android:src="@drawable/updated_image" />
 
-
         </LinearLayout>
-
 
     </FrameLayout>
 

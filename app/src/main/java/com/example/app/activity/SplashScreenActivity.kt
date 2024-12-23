@@ -47,15 +47,13 @@ class SplashScreenActivity : AppCompatActivity() {
                             )
                         )
                     } else {
-                        startActivity(Intent(this@SplashScreenActivity, MainActivity::class.java))
+                        startActivity(Intent(this@SplashScreenActivity, HomeActivity::class.java))
                     }
                     finish()
                 }
             }
         }
         handler.post(runnable)
-
-
     }
 
     override fun onDestroy() {

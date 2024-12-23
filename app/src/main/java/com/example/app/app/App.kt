@@ -1,5 +1,4 @@
 package com.example.app.app
-
 import android.app.Application
 import com.example.app.helper.SharedPreference
 

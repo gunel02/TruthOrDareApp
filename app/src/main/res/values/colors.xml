@@ -14,13 +14,11 @@
     <color name="ripple_color">#3700B3</color>
     <color name="blue_ribbon_color">#0067E6</color>
     <color name="app_background">#222222</color>
+    <color name="lighter_background">#242424</color>
     <color name="dirty_white">#ECECEC</color>
     <color name="image_yellow_color">#FFC107</color>
     <color name="dark_yellow_color">#FFB300</color>
     <color name="light_gray_color">#646464</color>
-
-
-<!--    test colors-->
     <color name="tuna_color">#38383D</color>
     <color name="white_transparent_20">#33FFFFFF</color>
     <color name="mid_gray_color">#5D5D65</color>

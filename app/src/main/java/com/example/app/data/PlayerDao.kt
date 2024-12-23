@@ -22,4 +22,5 @@ interface PlayerDao {
 
     @Query("SELECT * FROM user_table ORDER BY id ASC")
     fun readAllData(): LiveData<List<PlayersData>>
+
 }

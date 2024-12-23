@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/app_background"
     android:clickable="true"
-    android:focusable="true"
-    android:background="@color/app_background">
+    android:focusable="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -48,7 +48,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="10dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:textColor="@color/gray_white">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -71,6 +72,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/regular"
                     android:text="Сменить тему"
+                    android:textColor="@color/gray_white"
                     android:textSize="30sp" />
             </LinearLayout>
 
@@ -89,23 +91,24 @@
                     android:layout_marginStart="10dp"
                     android:background="@color/image_yellow_color" />
 
-                    <TextView
-                        android:layout_width="0dp"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="15dp"
-                        android:layout_weight="1"
-                        android:fontFamily="@font/regular"
-                        android:text="Язык"
-                        android:textSize="30sp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/regular"
+                    android:text="Язык"
+                    android:textColor="@color/gray_white"
+                    android:textSize="30sp" />
 
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:layout_gravity="center"
-                        android:layout_marginHorizontal="20dp"
-                        android:importantForAccessibility="no"
-                        android:src="@drawable/icon_ru"
-                        app:tint="@color/gray_color" />
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginHorizontal="20dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/icon_ru"
+                    app:tint="@color/gray_white" />
             </LinearLayout>
 
             <LinearLayout
@@ -129,6 +132,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/regular"
                     android:text="Пропуск заданий"
+                    android:textColor="@color/gray_white"
                     android:textSize="30sp" />
             </LinearLayout>
 
@@ -153,6 +157,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/regular"
                     android:text="Уведомления"
+                    android:textColor="@color/gray_white"
                     android:textSize="30sp" />
             </LinearLayout>
 
@@ -177,6 +182,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/regular"
                     android:text="Написать нам"
+                    android:textColor="@color/gray_white"
                     android:textSize="30sp" />
             </LinearLayout>
 
@@ -201,6 +207,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/regular"
                     android:text="Поставить оценку"
+                    android:textColor="@color/gray_white"
                     android:textSize="30sp" />
             </LinearLayout>
 
@@ -226,6 +233,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/regular"
                     android:text="Политика конфиденциальности"
+                    android:textColor="@color/gray_white"
                     android:textSize="30sp" />
             </LinearLayout>
 
@@ -243,7 +251,7 @@
                     android:layout_marginStart="10dp"
                     android:background="@color/image_yellow_color" />
 
-                 <TextView
+                <TextView
                     android:id="@+id/information"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
@@ -251,6 +259,7 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/regular"
                     android:text="Информация"
+                    android:textColor="@color/gray_white"
                     android:textSize="30sp" />
             </LinearLayout>
 
@@ -275,8 +284,12 @@
                     android:layout_weight="1"
                     android:fontFamily="@font/regular"
                     android:text="Покупки"
+                    android:textColor="@color/gray_white"
                     android:textSize="30sp" />
             </LinearLayout>
+
         </LinearLayout>
+
     </LinearLayout>
+
 </LinearLayout>

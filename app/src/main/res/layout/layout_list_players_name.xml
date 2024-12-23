@@ -4,26 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/background_color"
+    android:layout_marginBottom="10dp"
     android:orientation="vertical"
-    app:cardBackgroundColor="@color/light_gray_color"
+    app:cardBackgroundColor="@color/lighter_background"
     app:cardCornerRadius="12dp"
     app:strokeColor="@android:color/transparent"
     app:strokeWidth="0dp"
-    android:layout_marginBottom="10dp"
-    tools:context=".fragment.SetPlayersFragment">
+    tools:context=".fragment.AddPeopleFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="2dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="2dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:padding="10dp">
 
             <FrameLayout
                 android:layout_width="1dp"
@@ -31,30 +30,32 @@
                 android:layout_gravity="center"
                 android:layout_marginVertical="1dp"
                 android:layout_marginStart="10dp"
-                android:background="@color/dark_yellow_color" />
-
+                android:layout_marginEnd="10dp"
+                android:background="@color/image_yellow_color" />
 
             <ImageView
                 android:id="@+id/icon_man"
                 android:layout_width="40dp"
-                android:clickable="true"
-                android:focusable="true"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="5dp"
                 android:importantForAccessibility="no"
-                android:src="@drawable/image_man"
-                app:tint="@color/app_background" />
+                android:src="@drawable/icon_male"
+                app:tint="@color/white" />
 
             <ImageView
                 android:id="@+id/icon_women"
                 android:layout_width="40dp"
-                android:clickable="true"
-                android:focusable="true"
                 android:layout_height="40dp"
                 android:layout_gravity="center"
+                android:clickable="true"
+                android:focusable="true"
+                android:padding="5dp"
                 android:importantForAccessibility="no"
-                android:src="@drawable/image_women"
-                app:tint="@color/app_background" />
+                android:src="@drawable/icon_female"
+                app:tint="@color/white" />
 
             <EditText
                 android:id="@+id/player_name"
@@ -64,26 +65,28 @@
                 android:layout_weight="1"
                 android:autofillHints="name"
                 android:background="@null"
-                android:fontFamily="@font/regular"
-                android:hint="Имя"
                 android:focusable="true"
                 android:focusableInTouchMode="true"
+                android:fontFamily="@font/regular"
+                android:hint="Имя"
                 android:importantForAccessibility="yes"
                 android:inputType="text"
                 android:textColor="@color/image_yellow_color"
-                android:textColorHint="@color/dark_yellow_color"
+                android:textColorHint="@color/image_yellow_color"
                 android:textSize="30sp" />
 
             <ImageView
                 android:id="@+id/delete"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_gravity="center"
                 android:layout_marginEnd="20dp"
                 android:importantForAccessibility="no"
                 android:src="@drawable/icon_close"
-                app:tint="@color/app_background" />
+                app:tint="@color/white" />
+
         </LinearLayout>
+
     </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>

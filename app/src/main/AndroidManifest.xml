@@ -16,9 +16,7 @@
         <activity
             android:name=".activity.OnBoardingActivity"
             android:exported="false" />
-        <activity
-            android:name=".activity.PrivacyPolicyActivity"
-            android:exported="false" />
+
         <activity
             android:name=".activity.SplashScreenActivity"
             android:exported="true">
@@ -29,8 +27,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.MainActivity"
-            android:exported="false"></activity>
+            android:name=".activity.HomeActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>

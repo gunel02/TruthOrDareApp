@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
 import com.example.app.R
 import com.example.app.databinding.ActivityOnBoardingBinding
-import com.example.app.fragment.viepager_fragments.LanguageFragment
+import com.example.app.fragment.SelectLanguageFragment
 
 class OnBoardingActivity : AppCompatActivity() {
 
@@ -16,7 +16,7 @@ class OnBoardingActivity : AppCompatActivity() {
 
         binding = ActivityOnBoardingBinding.inflate(layoutInflater)
 
-        val fragment = LanguageFragment()
+        val fragment = SelectLanguageFragment()
         val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
         transaction.add(R.id.fragment_container, fragment)
         transaction.commit()

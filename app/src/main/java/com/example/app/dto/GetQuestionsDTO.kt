@@ -8,12 +8,12 @@ data class GetQuestionsDTO(
     var truth: List<GetTruthQuestionsDTO?>?,
     var dare: List<GetDareQuestionsDTO?>?
 
-){
+) {
     fun toGetQuestionsModel(): GetQuestionsModel {
         return GetQuestionsModel(
-            truth = truth?.map { it?.toGetTruthQuestionsModel() }?: emptyList(),
-            dare = dare?.map{it?.toGetDareQuestionsModel()}?: emptyList()
-            )
+            truth = truth?.map { it?.toGetTruthQuestionsModel() } ?: emptyList(),
+            dare = dare?.map { it?.toGetDareQuestionsModel() } ?: emptyList()
+        )
     }
 }
 

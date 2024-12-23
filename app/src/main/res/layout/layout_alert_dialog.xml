@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="370dp"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="16dp"
     app:cardBackgroundColor="@color/app_background"
@@ -9,33 +9,47 @@
 
     <FrameLayout
         android:id="@+id/error_dialog"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:visibility="gone">
+        android:visibility="visible">
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:padding="20dp">
 
-            <TextView
-                android:layout_width="match_parent"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="5dp"
-                android:fontFamily="@font/bold"
-                android:text="Упс!"
-                android:textColor="@color/white"
-                android:textSize="35sp" />
+                android:layout_marginBottom="15dp">
 
-            <FrameLayout
-                android:layout_width="100dp"
-                android:layout_height="5dp"
-                android:layout_marginBottom="15dp"
-                android:background="@color/image_yellow_color" />
+                <TextView
+                    android:id="@+id/oops_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/bold"
+                    android:text="Упс!"
+                    android:textColor="@color/white"
+                    android:textSize="35sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:background="@color/image_yellow_color"
+                    app:layout_constraintEnd_toEndOf="@id/oops_text"
+                    app:layout_constraintStart_toStartOf="@+id/oops_text"
+                    app:layout_constraintTop_toBottomOf="@+id/oops_text" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/regular"
                 android:text='Кажется,некоторые игроки остались без имен! Пожалуйста,введите имена всех игроков или удалите лишних.'
@@ -44,11 +58,11 @@
 
             <TextView
                 android:id="@+id/ok_button"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_gravity="end"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/bold"
-                android:gravity="end"
                 android:text="OK"
                 android:textColor="@color/image_yellow_color"
                 android:textSize="25sp" />

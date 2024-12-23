@@ -4,9 +4,9 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.app.data_class.PlayersData
+import com.example.app.data_class.EntityPlayers
 
-@Database(entities = [PlayersData::class], version = 1, exportSchema = false)
+@Database(entities = [EntityPlayers::class], version = 1, exportSchema = false)
 abstract class PlayerDatabase : RoomDatabase() {
     abstract fun playerDao(): PlayerDao
 

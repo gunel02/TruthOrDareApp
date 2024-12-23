@@ -7,11 +7,11 @@ import kotlinx.parcelize.Parcelize
 
 @Parcelize
 @Entity(tableName = "user_table")
-data class PlayersData(
+data class EntityPlayers(
     @PrimaryKey(autoGenerate = true)
     val id: Int = 0,
-    var name: String,
-    var gender: String = "",
+    var name: String = "",
+    var gender: Int = 0,
 ) : Parcelable
 
 

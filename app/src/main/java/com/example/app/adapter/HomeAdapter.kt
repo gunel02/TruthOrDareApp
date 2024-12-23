@@ -39,7 +39,7 @@ class HomeAdapter(
                     ?.commit()
 
                 val playerViewModel = ViewModelProvider(fragment)[PlayerViewModel::class.java]
-                playerViewModel.readAllData.observe(fragment) { players ->
+                playerViewModel.getUsers().observe(fragment) { players ->
                     val playerNames = players.map { it.name }
                     val bundle = Bundle()
                     bundle.putStringArrayList("PLAYER_NAMES", ArrayList(playerNames))

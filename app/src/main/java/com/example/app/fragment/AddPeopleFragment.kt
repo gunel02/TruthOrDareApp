@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.app.Dialog
 import android.os.Bundle
 import android.text.TextUtils
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,7 +17,7 @@ import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.app.R
 import com.example.app.adapter.PlayersNameAdapter
-import com.example.app.data_class.PlayersData
+import com.example.app.data_class.EntityPlayers
 import com.example.app.databinding.FragmentAddPeopleBinding
 import com.example.app.view_model.PlayerViewModel
 import kotlinx.coroutines.launch
@@ -26,7 +27,7 @@ class AddPeopleFragment : Fragment() {
 
     private var binding: FragmentAddPeopleBinding? = null
 
-    private var usersList: MutableList<PlayersData> = mutableListOf()
+    var usersList: MutableList<EntityPlayers> = mutableListOf()
 
     private val adapter by lazy { PlayersNameAdapter(this@AddPeopleFragment) }
 
@@ -40,26 +41,34 @@ class AddPeopleFragment : Fragment() {
 
         binding = FragmentAddPeopleBinding.inflate(inflater, container, false)
 
-        playerViewModel.readAllData.observe(viewLifecycleOwner) { players ->
-            usersList.clear()
-            usersList.addAll(players)
-            adapter.setData(usersList)
+        setUpRecyclerView()
+        getUsersData()
+        initListener()
 
-            if (usersList.isEmpty()) {
-                usersList.add(PlayersData(0, ""))
-                adapter.notifyDataSetChanged()
+        return binding?.root
+    }
+
+    private fun getUsersData() {
+        lifecycleScope.launch {
+            try {
+                val players = playerViewModel.getUsersWithoutLiveData()
+                usersList.clear()
+                usersList.addAll(players)
+
+                while (usersList.size < 2) {
+                    usersList.add(EntityPlayers(0, ""))
+                }
+                adapter.setData()
+            } catch (e: Exception) {
+                Log.e("TAG_error", "getUsersData: " + e.message)
             }
         }
-
-        setUpRecyclerView()
-        initListener()
-        return binding?.root
     }
 
     private fun showAlertDialog() {
         val exitDialog = Dialog(requireContext())
         exitDialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
-        exitDialog.setCancelable(false)
+        exitDialog.setCancelable(true)
         exitDialog.setContentView(R.layout.layout_alert_dialog)
         exitDialog.window?.setBackgroundDrawableResource(android.R.color.transparent)
         exitDialog.show()
@@ -68,6 +77,7 @@ class AddPeopleFragment : Fragment() {
         error.visibility = View.VISIBLE
 
         val okButton: TextView = exitDialog.findViewById(R.id.ok_button)
+
         okButton.setOnClickListener {
             exitDialog.dismiss()
         }
@@ -75,36 +85,33 @@ class AddPeopleFragment : Fragment() {
 
     private fun setUpRecyclerView() {
         binding?.recyclerView?.setHasFixedSize(true)
+        binding?.recyclerView?.layoutManager = LinearLayoutManager(context)
         binding?.recyclerView?.adapter = adapter
-        binding?.recyclerView?.layoutManager = LinearLayoutManager(requireContext())
     }
 
-    private fun addUserName(playerData: PlayersData) {
+    private fun addUserName(playerData: EntityPlayers) {
         lifecycleScope.launch {
             playerViewModel.addUser(playerData)
         }
     }
 
-    fun updatePlayer(playerData: PlayersData) {
+    private fun updatePlayer() {
         lifecycleScope.launch {
-            playerViewModel.updateUser(playerData)
+            playerViewModel.addAllPlayers(usersList)
         }
     }
 
     @SuppressLint("NotifyDataSetChanged")
     private fun initListener() {
         binding?.addButton?.setOnClickListener {
-            val newPlayer = PlayersData(0, "")
+            val newPlayer = EntityPlayers(0, "")
             usersList.add(newPlayer)
-            adapter.notifyItemInserted(usersList.size - 1)
-            addUserName(newPlayer)
+            adapter.setData()
         }
 
         binding?.playButton?.setOnClickListener {
             if (areAllPlayerNamesValid()) {
-                usersList.forEach { playerData ->
-                    updatePlayer(playerData)
-                }
+                updatePlayer()
                 navigateToNextFragment()
             } else {
                 showAlertDialog()
@@ -124,8 +131,9 @@ class AddPeopleFragment : Fragment() {
             .commit()
     }
 
-    fun deletePlayer(player: PlayersData) {
-        playerViewModel.deleteUser(player)
+    fun deletePlayer(player: EntityPlayers) {
+        usersList.remove(player)
+        adapter.setData()
     }
 
     override fun onDestroyView() {

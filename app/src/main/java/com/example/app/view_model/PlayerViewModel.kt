@@ -5,40 +5,41 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.viewModelScope
 import com.example.app.data.PlayerDatabase
-import com.example.app.data_class.PlayersData
-import com.example.app.models.GetQuestionsModel
+import com.example.app.data_class.EntityPlayers
 import com.example.app.repository.PlayerRepository
-import com.example.app.utility.Utils.parseQuestionsJSON
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 
 class PlayerViewModel(application: Application) : AndroidViewModel(application) {
 
-    val readAllData: LiveData<List<PlayersData>>
     private val repository: PlayerRepository
 
     init {
         val playerDao = PlayerDatabase.getDatabase(application).playerDao()
         repository = PlayerRepository(playerDao)
-        readAllData = repository.readAllData
     }
 
-    fun addUser(playersData: PlayersData) {
+    fun getUsers(): LiveData<List<EntityPlayers>> {
+        return repository.getUsers()
+    }
+
+    fun addUser(entityPlayers: EntityPlayers) {
         viewModelScope.launch(Dispatchers.IO) {
-            repository.addUser(playersData)
+            repository.addUser(entityPlayers)
         }
     }
 
-    fun updateUser(playersData: PlayersData) {
-        viewModelScope.launch(Dispatchers.IO) {
-            repository.updateUser(playersData)
+    suspend fun getUsersWithoutLiveData(): List<EntityPlayers> {
+        return withContext(Dispatchers.IO) {
+            repository.getUsersWithoutLiveData()
         }
     }
 
-    fun deleteUser(playersData: PlayersData) {
+    fun addAllPlayers(playersList: List<EntityPlayers>) {
         viewModelScope.launch(Dispatchers.IO) {
-            repository.deleteUser(playersData)
+            repository.replaceAllPlayers(playersList)
         }
     }
 

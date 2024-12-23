@@ -1,20 +1,20 @@
 package com.example.app.adapter
 
 import android.annotation.SuppressLint
+import android.text.Editable
+import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.app.R
-import com.example.app.data_class.PlayersData
 import com.example.app.databinding.LayoutListPlayersNameBinding
 import com.example.app.fragment.AddPeopleFragment
+import com.example.app.helper.Const
 
 class PlayersNameAdapter(
     private val addPeopleFragment: AddPeopleFragment
 ) : RecyclerView.Adapter<PlayersNameAdapter.PlayerViewHolder>() {
-
-    private val playersList = mutableListOf<PlayersData>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PlayerViewHolder {
         val binding =
@@ -23,109 +23,100 @@ class PlayersNameAdapter(
     }
 
     override fun onBindViewHolder(holder: PlayerViewHolder, position: Int) {
-        val player = playersList[position]
+        val player = addPeopleFragment.usersList[holder.bindingAdapterPosition]
 
         with(holder.binding) {
             playerName.setText(player.name)
 
             delete.setOnClickListener {
-                if (position >= 1 && position < playersList.size) {
-                    addPeopleFragment.deletePlayer(playersList[position])
-
-                    playersList.removeAt(position)
-
-                    notifyItemRemoved(position)
-
-                    notifyItemRangeChanged(position, playersList.size)
+                if (addPeopleFragment.usersList.size > 2) {
+                    addPeopleFragment.deletePlayer(addPeopleFragment.usersList[holder.bindingAdapterPosition])
                 }
             }
 
-            if (player.gender == "man") {
-                holder.iconMan.setColorFilter(
+            if (player.gender == Const.MAN) {
+                iconMan.setColorFilter(
                     ContextCompat.getColor(
-                        holder.itemView.context,
-                        R.color.dirty_white
+                        holder.itemView.context, R.color.dirty_white
                     )
                 )
-                holder.iconWomen.setColorFilter(
+                iconWomen.setColorFilter(
                     ContextCompat.getColor(
-                        holder.itemView.context,
-                        R.color.gray_color
+                        holder.itemView.context, R.color.gray_color
                     )
                 )
             } else {
-                holder.iconMan.setColorFilter(
+                iconMan.setColorFilter(
                     ContextCompat.getColor(
-                        holder.itemView.context,
-                        R.color.gray_color
+                        holder.itemView.context, R.color.gray_color
                     )
                 )
-                holder.iconWomen.setColorFilter(
+                iconWomen.setColorFilter(
                     ContextCompat.getColor(
-                        holder.itemView.context,
-                        R.color.dirty_white
+                        holder.itemView.context, R.color.dirty_white
                     )
                 )
             }
 
-            holder.iconMan.setOnClickListener {
-                if (player.gender != "man") {
-                    player.gender = "man"
-                    holder.iconMan.setColorFilter(
+            iconMan.setOnClickListener {
+                if (player.gender != Const.MAN) {
+                    player.gender = Const.MAN
+                    iconMan.setColorFilter(
                         ContextCompat.getColor(
-                            holder.itemView.context,
-                            R.color.dirty_white
+                            holder.itemView.context, R.color.dirty_white
                         )
                     )
-                    holder.iconWomen.setColorFilter(
+                    holder.binding.iconWomen.setColorFilter(
                         ContextCompat.getColor(holder.itemView.context, R.color.gray_color)
                     )
-                    addPeopleFragment.updatePlayer(player)
                 }
             }
 
-            holder.iconWomen.setOnClickListener {
-                if (player.gender != "women") {
-                    player.gender = "women"
-                    holder.iconWomen.setColorFilter(
+            iconWomen.setOnClickListener {
+                if (player.gender != Const.WOMAN) {
+                    player.gender = Const.WOMAN
+                    holder.binding.iconWomen.setColorFilter(
                         ContextCompat.getColor(
-                            holder.itemView.context,
-                            R.color.dirty_white
+                            holder.itemView.context, R.color.dirty_white
                         )
                     )
-                    holder.iconMan.setColorFilter(
+                    holder.binding.iconMan.setColorFilter(
                         ContextCompat.getColor(
-                            holder.itemView.context,
-                            R.color.gray_color
+                            holder.itemView.context, R.color.gray_color
                         )
                     )
-                    addPeopleFragment.updatePlayer(player)
                 }
             }
 
-            playerName.setOnFocusChangeListener { _, hasFocus ->
-                if (!hasFocus) {
-                    player.name = playerName.text.toString()
-                    addPeopleFragment.updatePlayer(player)
+            playerName.addTextChangedListener(object : TextWatcher {
+                override fun beforeTextChanged(
+                    s: CharSequence?,
+                    start: Int,
+                    count: Int,
+                    after: Int
+                ) {}
+
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+
                 }
-            }
+
+                override fun afterTextChanged(s: Editable?) {
+                    addPeopleFragment.usersList[holder.bindingAdapterPosition].name = s.toString()
+                }
+
+            })
+
         }
     }
 
-    override fun getItemCount(): Int = playersList.size
+    override fun getItemCount(): Int = addPeopleFragment.usersList.size
 
     @SuppressLint("NotifyDataSetChanged")
-    fun setData(newPlayers: List<PlayersData>) {
-        playersList.clear()
-        playersList.addAll(newPlayers)
+    fun setData() {
         notifyDataSetChanged()
     }
 
     class PlayerViewHolder(val binding: LayoutListPlayersNameBinding) :
-        RecyclerView.ViewHolder(binding.root) {
-        val iconMan = binding.iconMan
-        val iconWomen = binding.iconWomen
-
-    }
+        RecyclerView.ViewHolder(binding.root)
 
 }

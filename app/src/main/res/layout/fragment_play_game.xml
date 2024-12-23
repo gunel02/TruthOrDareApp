@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/app_background"
-    android:orientation="vertical"
-    tools:context=".fragment.chooseStartGame.ChooseModeFragment">
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical">
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="5dp"
@@ -27,15 +28,16 @@
 
         <TextView
             android:id="@+id/set_name"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="40dp"
             android:gravity="center"
             android:text="Имя"
             android:textColor="@color/image_yellow_color"
             android:textSize="30sp" />
 
-    </LinearLayout>
+    </FrameLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -65,6 +67,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/game_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
@@ -122,6 +125,7 @@
             android:layout_marginEnd="20dp">
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/finish_btn"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"
@@ -137,6 +141,7 @@
                     android:padding="5dp"
                     android:src="@drawable/image_play"
                     app:tint="@color/app_background" />
+
             </com.google.android.material.card.MaterialCardView>
 
         </com.example.app.widgets.RippleEffect>
@@ -161,6 +166,7 @@
                     android:padding="5dp"
                     android:src="@drawable/icon_plus"
                     app:tint="@color/app_background" />
+
             </com.google.android.material.card.MaterialCardView>
 
         </com.example.app.widgets.RippleEffect>

@@ -1,5 +1,6 @@
 package com.example.app.activity
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.FragmentTransaction
@@ -16,11 +17,11 @@ class OnBoardingActivity : AppCompatActivity() {
 
         binding = ActivityOnBoardingBinding.inflate(layoutInflater)
 
-        val fragment = SelectLanguageFragment()
-        val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
-        transaction.add(R.id.fragment_container, fragment)
-        transaction.commit()
+        val intent = Intent(this, SelectLanguageActivity::class.java)
+        startActivity(intent)
 
         setContentView(binding.root)
     }
 }
+
+

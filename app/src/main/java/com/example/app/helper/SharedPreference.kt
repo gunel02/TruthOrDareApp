@@ -30,7 +30,7 @@ object SharedPreference {
     }
 
     fun getIsFirstOpen(): Boolean {
-        return sharedPreferences.getBoolean(KEY_IS_FIRST_OPEN, false)
+        return sharedPreferences.getBoolean(KEY_IS_FIRST_OPEN, true)
     }
 
     fun clearSharedPreference() {

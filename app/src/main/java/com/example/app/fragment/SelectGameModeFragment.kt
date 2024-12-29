@@ -9,6 +9,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.lifecycleScope
 import com.example.app.R
+import com.example.app.activity.HomeActivity
 import com.example.app.data_class.EntityPlayers
 import com.example.app.databinding.FragmentSelectGameModeBinding
 import com.example.app.helper.Const
@@ -23,9 +24,10 @@ class SelectGameModeFragment : Fragment() {
     var currentQueue = 0
     var questionQueue = 0
     var dareQueue = 0
-    var questionList: MutableList<String> = mutableListOf()
-    var dareList: MutableList<String> = mutableListOf()
+    var questionList: MutableList<String?> = mutableListOf()
+    var dareList: MutableList<String?> = mutableListOf()
     var currentUserName = ""
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -33,12 +35,27 @@ class SelectGameModeFragment : Fragment() {
 
         binding = FragmentSelectGameModeBinding.inflate(inflater, container, false)
 
-        testAddQuestionsAndDares()
+        loadQuestionsAndDares()
+//        testAddQuestionsAndDares()
         getUsersData()
         initListener()
 
         return binding.root
     }
+
+    private fun loadQuestionsAndDares() {
+        val activity = requireActivity() as? HomeActivity
+        val questionsModel = activity?.questionsModel
+
+        questionsModel?.truth?.let { truths ->
+            questionList = truths.map { it?.question }.toMutableList()
+        }
+
+        questionsModel?.dare?.let { dares ->
+            dareList = dares.map { it?.question }.toMutableList()
+        }
+    }
+
 
     private fun testAddQuestionsAndDares() {
         questionList.add("1")
@@ -136,6 +153,4 @@ class SelectGameModeFragment : Fragment() {
         currentUserName = usersList[currentQueue % usersList.size].name
         binding.setName.text = currentUserName
     }
-
-
 }

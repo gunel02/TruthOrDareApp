@@ -31,7 +31,7 @@ class SettingsFragment : Fragment() {
             requireActivity().supportFragmentManager.popBackStack()
         }
 
-        binding.information.setOnClickListener{
+        binding.information.setOnClickListener {
             showAlertDialog()
         }
     }

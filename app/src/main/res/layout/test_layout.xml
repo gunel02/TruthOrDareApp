@@ -33,10 +33,9 @@
             android:layout_gravity="center"
             android:layout_marginHorizontal="40dp"
             android:gravity="center"
-            android:fontFamily="@font/bold"
-            android:text="Name"
+            android:text="Имя"
             android:textColor="@color/image_yellow_color"
-            android:textSize="35sp" />
+            android:textSize="30sp" />
 
     </FrameLayout>
 
@@ -46,95 +45,105 @@
         android:layout_weight="1"
         android:background="@color/app_background"
         android:gravity="center"
-        android:orientation="vertical">
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="5dp"
-            android:gravity="center"
-            android:orientation="horizontal">
-
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/truth_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginEnd="20dp"
-                android:orientation="vertical"
-                app:cardBackgroundColor="@color/lighter_background"
-                app:cardCornerRadius="12dp"
-                app:strokeColor="@android:color/transparent"
-                app:strokeWidth="0dp"
-                tools:context=".fragment.AddPeopleFragment">
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:fontFamily="@font/semi_bold"
-                    android:gravity="center"
-                    android:paddingHorizontal="35dp"
-                    android:paddingVertical="30dp"
-                    android:text="Truth"
-                    android:textColor="@color/dirty_white"
-                    android:textSize="30sp" />
-
-
-            </com.google.android.material.card.MaterialCardView>
-
-            <com.google.android.material.card.MaterialCardView
-                android:id="@+id/dare_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                app:cardBackgroundColor="@color/lighter_background"
-                app:cardCornerRadius="12dp"
-                app:strokeColor="@android:color/transparent"
-                app:strokeWidth="0dp"
-                tools:context=".fragment.AddPeopleFragment">
-
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/semi_bold"
-                    android:gravity="center"
-                    android:maxLines="1"
-                    android:paddingHorizontal="35dp"
-                    android:paddingVertical="30dp"
-                    android:text="Dare"
-                    android:textColor="@color/dirty_white"
-                    android:textSize="30sp" />
-
-
-            </com.google.android.material.card.MaterialCardView>
-        </LinearLayout>
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:paddingHorizontal="15dp">
 
         <com.google.android.material.card.MaterialCardView
-            android:id="@+id/random_choice_button"
-            android:layout_width="wrap_content"
+            android:id="@+id/truth_button"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:layout_marginBottom="23dp"
             android:orientation="vertical"
-            android:layout_marginTop="20dp"
+            android:padding="60dp"
             app:cardBackgroundColor="@color/lighter_background"
             app:cardCornerRadius="12dp"
             app:strokeColor="@android:color/transparent"
             app:strokeWidth="0dp"
             tools:context=".fragment.AddPeopleFragment">
 
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/semi_bold"
-                android:gravity="center"
-                android:paddingHorizontal="25dp"
-                android:paddingVertical="30dp"
-                android:text="Random Choice"
-                android:textColor="@color/dirty_white"
-                android:textSize="30sp" />
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semi_bold"
+                    android:gravity="center"
+                    android:padding="50dp"
+                    android:text="Truth"
+                    android:textColor="@color/dirty_white"
+                    android:textSize="40sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/random_choice_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:orientation="vertical"
+            android:padding="60dp"
+            app:cardBackgroundColor="@color/lighter_background"
+            app:cardCornerRadius="12dp"
+            app:strokeColor="@android:color/transparent"
+            app:strokeWidth="0dp"
+            tools:context=".fragment.AddPeopleFragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:fontFamily="@font/regular"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="Random Choice"
+                    android:textColor="@color/dirty_white"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/dare_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="23dp"
+            android:orientation="vertical"
+            android:padding="60dp"
+            app:cardBackgroundColor="@color/lighter_background"
+            app:cardCornerRadius="12dp"
+            app:strokeColor="@android:color/transparent"
+            app:strokeWidth="0dp"
+            tools:context=".fragment.AddPeopleFragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/semi_bold"
+                    android:gravity="center"
+                    android:padding="50dp"
+                    android:text="Dare"
+                    android:textColor="@color/dirty_white"
+                    android:textSize="40sp" />
+
+            </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
 
@@ -155,7 +164,7 @@
             android:layout_marginEnd="10dp"
             android:fontFamily="@font/regular"
             android:gravity="center"
-            android:text='Включить "Custom"?'
+            android:text="Enable 'Custom'?"
             android:textColor="@color/gray_white"
             android:textSize="20sp" />
 

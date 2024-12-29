@@ -7,7 +7,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.RecyclerView
 import com.example.app.R
 import com.example.app.databinding.LayoutCardBinding
-import com.example.app.fragment.AddPeopleFragment
 import com.example.app.fragment.HomeFragment
 import com.example.app.fragment.SelectGameModeFragment
 import com.example.app.view_model.PlayerViewModel
@@ -46,7 +45,6 @@ class HomeAdapter(
                     selectGameModeFragment.arguments = bundle
 
                 }
-
             }
         }
     }

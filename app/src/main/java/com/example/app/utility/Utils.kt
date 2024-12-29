@@ -20,6 +20,7 @@ object Utils {
         }
     }
 
+
     fun parseQuestionsJSON(context: Context): GetQuestionsModel? {
         return try {
             val jsonString = loadJSONFromAsset(context, "questions.json")

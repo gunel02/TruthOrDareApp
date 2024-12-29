@@ -1,6 +1,5 @@
 package com.example.app.fragment
 
-import com.example.app.fragment.test_view.TestHomeFragment
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -25,7 +24,8 @@ class HomeFragment : Fragment() {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
 
         binding.recyclerView.setHasFixedSize(true)
-        binding.recyclerView.layoutManager = LinearLayoutManager(activity, RecyclerView.VERTICAL, false)
+        binding.recyclerView.layoutManager =
+            LinearLayoutManager(activity, RecyclerView.VERTICAL, false)
         homeAdapter = HomeAdapter(this, getItems())
         binding.recyclerView.adapter = homeAdapter
 
@@ -56,7 +56,7 @@ class HomeFragment : Fragment() {
 
         binding.settingsButton.setOnClickListener {
             val fragmentTransaction = parentFragmentManager.beginTransaction()
-            fragmentTransaction.replace(R.id.fragment_container, TestHomeFragment())
+            fragmentTransaction.replace(R.id.fragment_container, SettingsFragment())
             fragmentTransaction.addToBackStack(null)
             fragmentTransaction.commit()
 

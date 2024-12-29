@@ -19,6 +19,7 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
     init {
         val playerDao = PlayerDatabase.getDatabase(application).playerDao()
         repository = PlayerRepository(playerDao)
+
     }
 
     fun getUsers(): LiveData<List<EntityPlayers>> {
@@ -42,5 +43,4 @@ class PlayerViewModel(application: Application) : AndroidViewModel(application) 
             repository.replaceAllPlayers(playersList)
         }
     }
-
 }

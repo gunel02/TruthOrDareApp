@@ -94,18 +94,14 @@ class PlayersNameAdapter(
                     start: Int,
                     count: Int,
                     after: Int
-                ) {}
-
-                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
-
+                ) {
                 }
-
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+                }
                 override fun afterTextChanged(s: Editable?) {
                     addPeopleFragment.usersList[holder.bindingAdapterPosition].name = s.toString()
                 }
-
             })
-
         }
     }
 
@@ -118,5 +114,4 @@ class PlayersNameAdapter(
 
     class PlayerViewHolder(val binding: LayoutListPlayersNameBinding) :
         RecyclerView.ViewHolder(binding.root)
-
 }

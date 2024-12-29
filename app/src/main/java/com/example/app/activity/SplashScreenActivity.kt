@@ -20,8 +20,8 @@ class SplashScreenActivity : AppCompatActivity() {
 
         binding = ActivitySplashScreenBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
         simulateProgress()
+
     }
 
     private fun simulateProgress() {
@@ -29,7 +29,6 @@ class SplashScreenActivity : AppCompatActivity() {
         val totalDuration = 1000
         val maxProgress = binding.progressBar.max
         val increment = maxProgress / (totalDuration / progressInterval)
-
         var currentProgress = 0
 
         val runnable = object : Runnable {

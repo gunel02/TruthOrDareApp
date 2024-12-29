@@ -4,16 +4,16 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="first_fragment_label">First Fragment</string>
     <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
+    <string name="next">Следующий</string>
     <string name="ok_button">OK</string>
     <string name="previous">Previous</string>
-    <string name="text_choose_language">Select Your Language</string>
+    <string name="text_choose_language">Выберите свой язык</string>
     <string name="text_russian">Русский</string>
-    <string name="text_english">English</string>
-    <string name="text_turkmen">Turkmen</string>
-    <string name="text_fun">Fun</string>
-    <string name="text_crazy">Crazy</string>
-    <string name="text_extreme">Extreme</string>
-    <string name="text_party_mode">Party Mode</string>
-    <string name="text_custom_pack">Custom Pack</string>
+    <string name="text_english">Английский</string>
+    <string name="text_turkmen">Туркменский</string>
+    <string name="text_fun">Веселье</string>
+    <string name="text_crazy">Безумный</string>
+    <string name="text_extreme">Крайняя степень</string>
+    <string name="text_party_mode">Режим вечеринки</string>
+    <string name="text_custom_pack">Пользовательский пакет</string>
 </resources>

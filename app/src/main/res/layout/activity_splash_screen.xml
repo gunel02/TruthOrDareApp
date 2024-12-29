@@ -30,8 +30,9 @@
                 android:gravity="center"
                 android:text="Let's Play!"
                 android:textColor="@android:color/white"
-                android:textSize="32sp"
-                android:textStyle="bold" />
+                android:fontFamily="@font/bold"
+                android:textSize="32sp" />
+
 
             <TextView
                 android:id="@+id/tvSubtitle"
@@ -40,6 +41,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="8dp"
                 android:gravity="center"
+                android:fontFamily="@font/regular"
                 android:text="Are you ready to face the truth or take the dare?"
                 android:textColor="@android:color/white"
                 android:textSize="16sp" />

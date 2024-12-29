@@ -30,7 +30,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="5dp"
                     android:fontFamily="@font/bold"
-                    android:text="Упс!"
+                    android:text="Oops!"
                     android:textColor="@color/white"
                     android:textSize="35sp"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/regular"
-                android:text='Кажется,некоторые игроки остались без имен! Пожалуйста,введите имена всех игроков или удалите лишних.'
+                android:text= " It seems some players are missing names! Please enter names for all players or remove the extras."
                 android:textColor="@color/gray_white"
                 android:textSize="15sp" />
 

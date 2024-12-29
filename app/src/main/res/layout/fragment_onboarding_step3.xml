@@ -32,13 +32,14 @@
                 android:text="Party Starts Here!"
                 android:textColor="@color/app_background"
                 android:textSize="25sp"
-                android:textStyle="bold" />
+                android:fontFamily="@font/bold"/>
 
             <TextView
                 android:id="@+id/text_subtitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
+                android:fontFamily="@font/regular"
                 android:text="Truth or Dare – Let’s Get Crazy!"
                 android:textColor="@color/light_gray_color"
                 android:textSize="16sp" />

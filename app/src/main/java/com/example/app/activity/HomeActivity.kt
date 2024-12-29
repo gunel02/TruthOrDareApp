@@ -8,25 +8,32 @@ import com.example.app.databinding.ActivityHomeBinding
 import com.example.app.fragment.AddPeopleFragment
 import com.example.app.fragment.HomeFragment
 import com.example.app.helper.SharedPreference
+import com.example.app.models.GetQuestionsModel
+import com.example.app.utility.Utils
+
 
 class HomeActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHomeBinding
+    var questionsModel : GetQuestionsModel? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        loadQuestionsFromAssets()
         init()
-        initListener()
 
+    }
+
+    private fun loadQuestionsFromAssets() {
+        questionsModel = Utils.parseQuestionsJSON(this)
     }
 
     private fun init() {
         if (SharedPreference.getIsFirstOpen()) {
             SharedPreference.setIsFirstOpen(false)
-//            todo go to add people fragment    - done
 
             val fragment = AddPeopleFragment()
             val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
@@ -34,7 +41,6 @@ class HomeActivity : AppCompatActivity() {
             transaction.commit()
 
         } else {
-//            todo go to add HomeFragment     - done
 
             val fragment = HomeFragment()
             val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
@@ -51,12 +57,5 @@ class HomeActivity : AppCompatActivity() {
         } else {
             super.onBackPressed()
         }
-    }
-
-    private fun initListener() {
-//        val fragment = LanguageFragment()
-//        val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
-//        transaction.replace(R.id.fragment_container, fragment)
-//        transaction.commit()
     }
 }

@@ -33,10 +33,9 @@
             android:layout_gravity="center"
             android:layout_marginHorizontal="40dp"
             android:gravity="center"
-            android:fontFamily="@font/bold"
             android:text="Name"
             android:textColor="@color/image_yellow_color"
-            android:textSize="35sp" />
+            android:textSize="30sp" />
 
     </FrameLayout>
 
@@ -74,7 +73,7 @@
                     android:layout_height="match_parent"
                     android:fontFamily="@font/semi_bold"
                     android:gravity="center"
-                    android:paddingHorizontal="35dp"
+                    android:paddingHorizontal="25dp"
                     android:paddingVertical="30dp"
                     android:text="Truth"
                     android:textColor="@color/dirty_white"
@@ -101,7 +100,7 @@
                     android:fontFamily="@font/semi_bold"
                     android:gravity="center"
                     android:maxLines="1"
-                    android:paddingHorizontal="35dp"
+                    android:paddingHorizontal="25dp"
                     android:paddingVertical="30dp"
                     android:text="Dare"
                     android:textColor="@color/dirty_white"
@@ -110,7 +109,6 @@
 
             </com.google.android.material.card.MaterialCardView>
         </LinearLayout>
-
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/random_choice_button"
             android:layout_width="wrap_content"
@@ -136,7 +134,9 @@
                 android:textColor="@color/dirty_white"
                 android:textSize="30sp" />
 
+
         </com.google.android.material.card.MaterialCardView>
+
 
     </LinearLayout>
 
@@ -155,7 +155,7 @@
             android:layout_marginEnd="10dp"
             android:fontFamily="@font/regular"
             android:gravity="center"
-            android:text='Включить "Custom"?'
+            android:text='Enable "Custom"?'
             android:textColor="@color/gray_white"
             android:textSize="20sp" />
 

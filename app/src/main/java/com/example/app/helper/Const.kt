@@ -10,4 +10,10 @@ object Const {
 
     const val TRUTH = "truth"
     const val DARE = "dare"
+
+    const val LEVEL_EASY = "easy"
+    const val LEVEL_EXTREME = "extreme"
+    const val LEVEL_HARD = "hard"
+    const val LEVEL_CRAZY = "crazy"
+    const val LEVEL_CUSTOM = "custom"
 }

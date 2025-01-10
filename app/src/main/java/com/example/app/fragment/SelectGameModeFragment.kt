@@ -20,23 +20,21 @@ class SelectGameModeFragment : Fragment() {
 
     private lateinit var binding: FragmentSelectGameModeBinding
     private val playerViewModel: PlayerViewModel by viewModels()
-    var usersList: MutableList<EntityPlayers> = mutableListOf()
-    var currentQueue = 0
-    var questionQueue = 0
-    var dareQueue = 0
-    var questionList: MutableList<String?> = mutableListOf()
-    var dareList: MutableList<String?> = mutableListOf()
-    var currentUserName = ""
+    private var usersList: MutableList<EntityPlayers> = mutableListOf()
+    private var currentQueue = 0
+    private var questionQueue = 0
+    private var dareQueue = 0
+    private var questionList: MutableList<String?> = mutableListOf()
+    private var dareList: MutableList<String?> = mutableListOf()
+    private var currentUserName = ""
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         binding = FragmentSelectGameModeBinding.inflate(inflater, container, false)
 
         loadQuestionsAndDares()
-//        testAddQuestionsAndDares()
         getUsersData()
         initListener()
 
@@ -46,29 +44,49 @@ class SelectGameModeFragment : Fragment() {
     private fun loadQuestionsAndDares() {
         val activity = requireActivity() as? HomeActivity
         val questionsModel = activity?.questionsModel
+        val level = arguments?.getString("level") ?: ""
 
-        questionsModel?.truth?.let { truths ->
-            questionList = truths.map { it?.question }.toMutableList()
+        when (level) {
+            Const.LEVEL_EASY -> {
+                questionsModel?.truth?.filter { it?.level == "Easy" }?.let { truths ->
+                    questionList = truths.map { it?.question }.toMutableList()
+                }
+                questionsModel?.dare?.filter { it?.level == "Easy" }?.let { dares ->
+                    dareList = dares.map { it?.question }.toMutableList()
+                }
+            }
+
+            Const.LEVEL_EXTREME -> {
+                questionsModel?.truth?.filter { it?.level == "Extreme" }?.let { truths ->
+                    questionList = truths.map { it?.question }.toMutableList()
+                }
+                questionsModel?.dare?.filter { it?.level == "Extreme" }?.let { dares ->
+                    dareList = dares.map { it?.question }.toMutableList()
+                }
+            }
+
+            Const.LEVEL_HARD -> {
+                questionsModel?.truth?.filter { it?.level == "Hard" }?.let { truths ->
+                    questionList = truths.map { it?.question }.toMutableList()
+                }
+                questionsModel?.dare?.filter { it?.level == "Hard" }?.let { dares ->
+                    dareList = dares.map { it?.question }.toMutableList()
+                }
+            }
+
+            Const.LEVEL_CRAZY -> {
+                questionsModel?.truth?.filter { it?.level == "Crazy" }?.let { truths ->
+                    questionList = truths.map { it?.question }.toMutableList()
+                }
+                questionsModel?.dare?.filter { it?.level == "Crazy" }?.let { dares ->
+                    dareList = dares.map { it?.question }.toMutableList()
+                }
+            }
+
+            Const.LEVEL_CUSTOM -> {
+                // Add logic for custom levels if needed
+            }
         }
-
-        questionsModel?.dare?.let { dares ->
-            dareList = dares.map { it?.question }.toMutableList()
-        }
-    }
-
-
-    private fun testAddQuestionsAndDares() {
-        questionList.add("1")
-        questionList.add("2")
-        questionList.add("3")
-        questionList.add("4")
-        questionList.add("5")
-
-        dareList.add("q")
-        dareList.add("w")
-        dareList.add("e")
-        dareList.add("r")
-        dareList.add("t")
     }
 
 
@@ -100,6 +118,10 @@ class SelectGameModeFragment : Fragment() {
         val bundle = Bundle()
         bundle.putString("mode", Const.TRUTH)
         bundle.putString("user_name", currentUserName)
+
+        bundle.putStringArrayList("questions_list", ArrayList(questionList))
+        bundle.putStringArrayList("dares_list", ArrayList(dareList))
+
         if (questionQueue >= questionList.size) {
             questionQueue = 0
         }
@@ -115,11 +137,18 @@ class SelectGameModeFragment : Fragment() {
         setUserName()
     }
 
+
     private fun dareClick() {
         val fragment = PlayGameFragment()
         val bundle = Bundle()
         bundle.putString("mode", Const.DARE)
         bundle.putString("user_name", currentUserName)
+
+
+        bundle.putStringArrayList("questions_list", ArrayList(questionList))
+        bundle.putStringArrayList("dares_list", ArrayList(dareList))
+
+
         if (dareQueue >= dareList.size) {
             dareQueue = 0
         }

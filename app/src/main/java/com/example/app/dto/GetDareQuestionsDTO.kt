@@ -7,11 +7,13 @@ import kotlinx.serialization.Serializable
 data class GetDareQuestionsDTO(
     var id: Int?,
     var question: String?,
+    var level: String?,
 ) {
     fun toGetDareQuestionsModel(): GetDareQuestionsModel {
         return GetDareQuestionsModel(
             id = id ?: 0,
             question = question ?: "",
+            level = level ?: "",
         )
     }
 }

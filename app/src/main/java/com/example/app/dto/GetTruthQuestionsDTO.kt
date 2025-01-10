@@ -7,12 +7,14 @@ import kotlinx.serialization.Serializable
 data class GetTruthQuestionsDTO(
     var id: Int?,
     var question: String?,
+    var level: String?
 
     ) {
     fun toGetTruthQuestionsModel(): GetTruthQuestionsModel {
         return GetTruthQuestionsModel(
             id = id ?: 0,
-            question = question ?: ""
+            question = question ?: "",
+            level = level ?: ""
         )
     }
 }

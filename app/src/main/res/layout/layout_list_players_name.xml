@@ -72,7 +72,7 @@
                 android:importantForAccessibility="yes"
                 android:inputType="text"
                 android:textColor="@color/image_yellow_color"
-                android:textColorHint="@color/image_yellow_color"
+                android:textColorHint="@color/mid_gray_color"
                 android:textSize="30sp" />
 
             <ImageView

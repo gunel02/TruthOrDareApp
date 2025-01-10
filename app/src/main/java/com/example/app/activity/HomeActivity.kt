@@ -15,7 +15,7 @@ import com.example.app.utility.Utils
 class HomeActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityHomeBinding
-    var questionsModel : GetQuestionsModel? = null
+    var questionsModel: GetQuestionsModel? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

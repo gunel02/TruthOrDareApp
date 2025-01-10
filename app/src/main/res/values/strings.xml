@@ -10,10 +10,10 @@
     <string name="text_russian">Russian</string>
     <string name="text_english">English</string>
     <string name="text_turkmen">Turkmen</string>
-    <string name="text_fun">Fun</string>
+    <string name="text_fun">Easy</string>
     <string name="text_crazy">Crazy</string>
     <string name="text_extreme">Extreme</string>
-    <string name="text_party_mode">Party Mode</string>
+    <string name="text_party_mode">Hard</string>
     <string name="text_custom_pack">Custom Pack</string>
 </resources>
 

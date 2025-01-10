@@ -9,6 +9,7 @@ import com.example.app.R
 import com.example.app.databinding.LayoutCardBinding
 import com.example.app.fragment.HomeFragment
 import com.example.app.fragment.SelectGameModeFragment
+import com.example.app.helper.Const
 import com.example.app.view_model.PlayerViewModel
 
 class HomeAdapter(
@@ -30,7 +31,31 @@ class HomeAdapter(
             title.text = fragment.getString(current.title)
 
             nextButton.setOnClickListener {
-                val selectGameModeFragment = SelectGameModeFragment( )
+                val selectGameModeFragment = SelectGameModeFragment()
+                val bundle = Bundle()
+                when (current.level) {
+                    Const.LEVEL_EASY -> {
+                        bundle.putString("level", Const.LEVEL_EASY)
+                    }
+
+                    Const.LEVEL_EXTREME -> {
+                        bundle.putString("level", Const.LEVEL_EXTREME)
+                    }
+
+                    Const.LEVEL_HARD -> {
+                        bundle.putString("level", Const.LEVEL_HARD)
+                    }
+
+                    Const.LEVEL_CRAZY -> {
+                        bundle.putString("level", Const.LEVEL_CRAZY)
+                    }
+
+                    Const.LEVEL_CUSTOM -> {
+                        bundle.putString("level", Const.LEVEL_CUSTOM)
+                    }
+                }
+                selectGameModeFragment.arguments = bundle
+
                 val fragmentName = selectGameModeFragment::class.java.name
                 fragment.activity?.supportFragmentManager?.beginTransaction()
                     ?.add(R.id.fragment_container, selectGameModeFragment)
@@ -40,14 +65,14 @@ class HomeAdapter(
                 val playerViewModel = ViewModelProvider(fragment)[PlayerViewModel::class.java]
                 playerViewModel.getUsers().observe(fragment) { players ->
                     val playerNames = players.map { it.name }
-                    val bundle = Bundle()
                     bundle.putStringArrayList("PLAYER_NAMES", ArrayList(playerNames))
                     selectGameModeFragment.arguments = bundle
-
                 }
             }
+
         }
     }
+
 
     override fun getItemCount(): Int {
         return searchList.size

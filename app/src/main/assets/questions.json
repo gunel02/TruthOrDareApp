@@ -7,814 +7,1210 @@
     },
     {
       "id": 2,
-      "question": "What is the most embarrassing thing you've ever done?",
-      "level": "Moderate"
-    },
-    {
-      "id": 3,
-      "question": "Have you ever lied to your best friend?",
-      "level": "Moderate"
-    },
-    {
-      "id": 4,
-      "question": "What is a secret you’ve never told anyone?",
-      "level": "Hard"
-    },
-    {
-      "id": 5,
       "question": "When was the last time you lied?",
       "level": "Easy"
     },
     {
-      "id": 6,
-      "question": "What's the worst thing you've ever done at work?",
-      "level": "Moderate"
-    },
-    {
-      "id": 7,
+      "id": 3,
       "question": "When was the last time you cried?",
       "level": "Easy"
     },
     {
-      "id": 8,
+      "id": 4,
       "question": "What's your biggest fear?",
       "level": "Easy"
     },
     {
-      "id": 9,
-      "question": "What's your biggest fantasy?",
-      "level": "Hard"
-    },
-    {
-      "id": 10,
-      "question": "Do you have any fetishes?",
-      "level": "Hard"
-    },
-    {
-      "id": 11,
+      "id": 5,
       "question": "Who's the last person you searched on Instagram?",
       "level": "Easy"
     },
     {
-      "id": 12,
-      "question": "What's something you're glad your family doesn't know about you?",
-      "level": "Hard"
-    },
-    {
-      "id": 13,
-      "question": "Have you ever cheated on someone?",
-      "level": "Hard"
-    },
-    {
-      "id": 14,
-      "question": "Where's the weirdest place you peed?",
-      "level": "Crazy"
-    },
-    {
-      "id": 15,
-      "question": "What's the worst thing you've ever done?",
-      "level": "Hard"
-    },
-    {
-      "id": 16,
-      "question": "What's the strangest thing you've ever eaten?",
-      "level": "Moderate"
-    },
-    {
-      "id": 17,
-      "question": "What's your relationship deal-breaker?",
-      "level": "Moderate"
-    },
-    {
-      "id": 18,
-      "question": "What's a secret you've never told anyone?",
-      "level": "Hard"
-    },
-    {
-      "id": 19,
+      "id": 6,
       "question": "Do you have a hidden talent?",
       "level": "Easy"
     },
     {
-      "id": 20,
+      "id": 7,
       "question": "Who was your first celebrity crush?",
       "level": "Easy"
     },
     {
-      "id": 21,
-      "question": "What are your thoughts on polyamory?",
-      "level": "Hard"
-    },
-    {
-      "id": 22,
-      "question": "What's the worst intimate experience you've ever had?",
-      "level": "Crazy"
-    },
-    {
-      "id": 23,
-      "question": "What's the best intimate experience you've ever had?",
-      "level": "Crazy"
-    },
-    {
-      "id": 24,
-      "question": "Have you ever cheated in an exam?",
-      "level": "Moderate"
-    },
-    {
-      "id": 25,
-      "question": "If you were going to be on a reality TV show, which would it be?",
-      "level": "Moderate"
-    },
-    {
-      "id": 26,
-      "question": "What's the drunkest you've ever been?",
-      "level": "Crazy"
-    },
-    {
-      "id": 27,
-      "question": "Have you ever broken the law?",
-      "level": "Hard"
-    },
-    {
-      "id": 28,
+      "id": 8,
       "question": "What's your biggest insecurity?",
       "level": "Easy"
     },
     {
-      "id": 29,
-      "question": "Have you ever stayed friends with someone because it benefited you beyond just the friendship?",
-      "level": "Moderate"
-    },
-    {
-      "id": 30,
-      "question": "What's the biggest mistake you've ever made?",
-      "level": "Hard"
-    },
-    {
-      "id": 31,
-      "question": "What's the most disgusting thing you've ever done?",
-      "level": "Crazy"
-    },
-    {
-      "id": 32,
-      "question": "Who would you like to kiss in this room?",
-      "level": "Hard"
-    },
-    {
-      "id": 33,
-      "question": "What's one thing you hate people knowing about you?",
-      "level": "Moderate"
-    },
-    {
-      "id": 34,
-      "question": "What's the worst thing anyone's ever done to you?",
-      "level": "Hard"
-    },
-    {
-      "id": 35,
+      "id": 9,
       "question": "What's the best thing anyone's ever done for you?",
       "level": "Easy"
     },
     {
-      "id": 36,
-      "question": "Have you ever had a run in with the law?",
-      "level": "Hard"
-    },
-    {
-      "id": 37,
+      "id": 10,
       "question": "What's your worst habit?",
       "level": "Easy"
     },
     {
-      "id": 38,
-      "question": "What's the most embarrassing thing you've done in a taxi?",
-      "level": "Crazy"
-    },
-    {
-      "id": 39,
-      "question": "What's the worst thing you've ever said to anyone?",
-      "level": "Hard"
-    },
-    {
-      "id": 40,
-      "question": "Have you ever peed in the shower?",
-      "level": "Crazy"
-    },
-    {
-      "id": 41,
-      "question": "What's the strangest dream you've had?",
-      "level": "Moderate"
-    },
-    {
-      "id": 42,
-      "question": "Have you ever been caught doing something you shouldn't have?",
-      "level": "Hard"
-    },
-    {
-      "id": 43,
-      "question": "What's the worst date you've been on?",
-      "level": "Crazy"
-    },
-    {
-      "id": 44,
+      "id": 11,
       "question": "What's the best date you've been on?",
       "level": "Easy"
     },
     {
-      "id": 45,
-      "question": "What happened on the latest night out you've ever had?",
-      "level": "Crazy"
-    },
-    {
-      "id": 46,
-      "question": "What's your biggest regret?",
-      "level": "Moderate"
-    },
-    {
-      "id": 47,
-      "question": "What's the biggest misconception about you?",
-      "level": "Moderate"
-    },
-    {
-      "id": 48,
-      "question": "Have you ever said something you regret about someone in this room?",
-      "level": "Hard"
-    },
-    {
-      "id": 49,
+      "id": 12,
       "question": "What's one thing you wish people knew about you?",
       "level": "Easy"
     },
     {
-      "id": 50,
-      "question": "Why did your last relationship break down?",
-      "level": "Hard"
-    },
-    {
-      "id": 51,
-      "question": "Have you ever lied to get out of a bad date?",
-      "level": "Moderate"
-    },
-    {
-      "id": 52,
-      "question": "What's the most trouble you've been in?",
-      "level": "Hard"
-    },
-    {
-      "id": 53,
-      "question": "What's the worst thing you've lied about?",
-      "level": "Hard"
-    },
-    {
-      "id": 54,
-      "question": "What's one thing you wish you'd lied about?",
-      "level": "Moderate"
-    },
-    {
-      "id": 55,
+      "id": 13,
       "question": "What's the best piece of advice you've been given?",
       "level": "Easy"
     },
     {
-      "id": 56,
-      "question": "What's the most you've spent on a night out?",
-      "level": "Moderate"
-    },
-    {
-      "id": 57,
+      "id": 14,
       "question": "Have you ever returned or re-gifted a present?",
       "level": "Easy"
     },
     {
-      "id": 58,
+      "id": 15,
       "question": "What's your guilty pleasure?",
       "level": "Easy"
     },
     {
-      "id": 59,
+      "id": 16,
       "question": "What's one thing you only do when you're alone?",
       "level": "Easy"
     },
     {
-      "id": 60,
-      "question": "If you had to get back with an ex, who would you choose?",
-      "level": "Hard"
-    },
-    {
-      "id": 61,
-      "question": "If you had to cut one friend out of your life, who would it be?",
-      "level": "Hard"
-    },
-    {
-      "id": 62,
-      "question": "Do you have a favourite friend?",
-      "level": "Moderate"
-    },
-    {
-      "id": 63,
-      "question": "What's your biggest turn on?",
-      "level": "Hard"
-    },
-    {
-      "id": 64,
-      "question": "What's the strangest rumour you've heard about yourself?",
-      "level": "Moderate"
-    },
-    {
-      "id": 65,
-      "question": "What's your favourite gross food combination?",
-      "level": "Crazy"
-    },
-    {
-      "id": 66,
+      "id": 17,
       "question": "What's the silliest reason you've left a club early?",
       "level": "Easy"
     },
     {
-      "id": 67,
+      "id": 18,
       "question": "What have you purchased that's been the biggest waste of money?",
       "level": "Easy"
     },
     {
-      "id": 68,
-      "question": "If you could swap lives with someone in this room, who would it be?",
-      "level": "Moderate"
-    },
-    {
-      "id": 69,
+      "id": 19,
       "question": "Tell me about your first kiss",
       "level": "Easy"
     },
     {
-      "id": 70,
-      "question": "What was the most inappropriate time you farted?",
-      "level": "Crazy"
-    },
-    {
-      "id": 71,
-      "question": "What's something you really hope your family never finds out about?",
-      "level": "Hard"
-    },
-    {
-      "id": 72,
-      "question": "What's the weirdest lie you've ever told?",
-      "level": "Moderate"
-    },
-    {
-      "id": 73,
-      "question": "Do you have any fake social media accounts?",
-      "level": "Hard"
-    },
-    {
-      "id": 74,
-      "question": "What is the weirdest thing you've ever googled?",
-      "level": "Moderate"
-    },
-    {
-      "id": 75,
-      "question": "What's the weirdest thing you've ever done for a dare?",
-      "level": "Crazy"
-    },
-    {
-      "id": 76,
+      "id": 20,
       "question": "How would you rate your looks on a scale of 1 to 10?",
       "level": "Easy"
     },
     {
-      "id": 77,
-      "question": "What gives you the ick?",
-      "level": "Moderate"
-    },
-    {
-      "id": 78,
-      "question": "Have you ever told a lie about your BFF to make yourself look better?",
-      "level": "Hard"
-    },
-    {
-      "id": 79,
-      "question": "Have you ever told a lie about your BFF to make yourself look better?",
-      "level": "Hard"
-    },
-    {
-      "id": 80,
-      "question": "What's your worst fashion moment?",
-      "level": "Moderate"
-    },
-    {
-      "id": 81,
+      "id": 21,
       "question": "What's your biggest pet peeve?",
       "level": "Easy"
     },
-
     {
-      "id": 82,
+      "id": 22,
       "question": "What is a weird food that you love?",
       "level": "Easy"
     },
     {
-      "id": 83,
+      "id": 23,
       "question": "What terrible movie or show is your guilty pleasure?",
       "level": "Easy"
     },
     {
-      "id": 84,
+      "id": 24,
       "question": "What was your biggest childhood fear?",
       "level": "Easy"
     },
     {
-      "id": 85,
+      "id": 25,
       "question": "What is the first letter of your crush's name?",
       "level": "Easy"
     },
     {
-      "id": 86,
+      "id": 26,
       "question": "What is the worst grade you received for a class in school/college?",
       "level": "Easy"
     },
     {
-      "id": 87,
+      "id": 27,
       "question": "What is the biggest lie you've ever told?",
       "level": "Easy"
     },
     {
-      "id": 88,
+      "id": 28,
       "question": "Have you ever accidentally hit something (or someone!) with your car?",
       "level": "Easy"
     },
     {
-      "id": 89,
+      "id": 29,
       "question": "Have you ever broken an expensive item?",
       "level": "Easy"
     },
     {
-      "id": 90,
+      "id": 30,
       "question": "What is one thing you'd change about your appearance if you could?",
       "level": "Easy"
     },
     {
-      "id": 91,
+      "id": 31,
       "question": "What is one thing you'd change about your appearance if you could?",
       "level": "Easy"
     },
     {
-      "id": 92,
+      "id": 32,
       "question": "If you suddenly had a million dollars, how would you spend it?",
       "level": "Easy"
     },
     {
-      "id": 93,
+      "id": 33,
       "question": "Who is the best teacher you've ever had and why?",
       "level": "Easy"
     },
     {
-      "id": 94,
+      "id": 34,
       "question": "What is the worst food you've ever tasted?",
       "level": "Easy"
     },
     {
-      "id": 95,
+      "id": 35,
       "question": "What is the weirdest way you've met someone you now consider a close friend?",
       "level": "Easy"
     },
     {
-      "id": 96,
+      "id": 36,
       "question": "What is the most embarrassing thing you've posted on social media?",
-      "level": "Easy"
+      "level": "Extreme"
+    },
+    {
+      "id": 37,
+      "question": "Who was your first celebrity crush?",
+      "level": "Extreme"
+    },
+    {
+      "id": 38,
+      "question": "Have you ever revealed a friend's secret to someone else?",
+      "level": "Extreme"
+    },
+    {
+      "id": 39,
+      "question": "How many kids do you want to have one day (or how many did you want to have growing up)?",
+      "level": "Extreme"
+    },
+    {
+      "id": 40,
+      "question": "If you could only eat one meal for the rest of your life, what would it be?",
+      "level": "Extreme"
+    },
+    {
+      "id": 41,
+      "question": "What is a secret you had as a child that you never told your parents?",
+      "level": "Extreme"
+    },
+    {
+      "id": 42,
+      "question": "What is your favorite book of all time?",
+      "level": "Extreme"
+    },
+    {
+      "id": 43,
+      "question": "What is the last text message you sent your best friend?",
+      "level": "Extreme"
+    },
+    {
+      "id": 44,
+      "question": "What is something you would do if you knew there were no consequences?",
+      "level": "Extreme"
+    },
+    {
+      "id": 45,
+      "question": "What is the worst physical pain you've ever been in?",
+      "level": "Extreme"
+    },
+    {
+      "id": 46,
+      "question": "Personality-wise, are you more like your mom or your dad?",
+      "level": "Extreme"
+    },
+    {
+      "id": 47,
+      "question": "When is the last time you apologized (and what did you do)?",
+      "level": "Extreme"
+    },
+    {
+      "id": 48,
+      "question": "Have you ever reported someone for doing something wrong (either to the police or at work/school)?",
+      "level": "Extreme"
+    },
+    {
+      "id": 49,
+      "question": "If your house caught on fire and you could only save three things (besides people), what would they be?",
+      "level": "Extreme"
+    },
+    {
+      "id": 50,
+      "question": "If you could pick one other player to take with you to a deserted island, who would it be?",
+      "level": "Extreme"
+    },
+    {
+      "id": 51,
+      "question": "What sport or hobby do you wish you would've picked up as a child?",
+      "level": "Extreme"
+    },
+    {
+      "id": 52,
+      "question": "Have you ever stolen anything?",
+      "level": "Extreme"
+    },
+    {
+      "id": 53,
+      "question": "Have you ever been kicked out of a store, restaurant, bar, event, etc.?",
+      "level": "Extreme"
+    },
+    {
+      "id": 54,
+      "question": "What is the worst date you've ever had?",
+      "level": "Extreme"
+    },
+    {
+      "id": 55,
+      "question": "What is the weirdest thing you've ever done in public?",
+      "level": "Extreme"
+    },
+    {
+      "id": 56,
+      "question": "What is the last excuse you used to cancel plans?",
+      "level": "Extreme"
+    },
+    {
+      "id": 57,
+      "question": "What is the biggest mistake you've ever made at school or work?",
+      "level": "Extreme"
+    },
+    {
+      "id": 58,
+      "question": "Which player would survive the longest in a horror/apocalypse movie, and who would be the first one to die?",
+      "level": "Extreme"
+    },
+    {
+      "id": 59,
+      "question": "What is the dirtiest room/area of your house?",
+      "level": "Extreme"
+    },
+    {
+      "id": 60,
+      "question": "Which of your family members annoys you the most?",
+      "level": "Extreme"
+    },
+    {
+      "id": 61,
+      "question": "When is the last time you cried?",
+      "level": "Extreme"
+    },
+    {
+      "id": 62,
+      "question": "When is the last time you made someone else cry?",
+      "level": "Extreme"
+    },
+    {
+      "id": 63,
+      "question": "What is the longest you've ever gone without showering?",
+      "level": "Extreme"
+    },
+    {
+      "id": 64,
+      "question": "What is the worst date you've ever been on?",
+      "level": "Extreme"
+    },
+    {
+      "id": 65,
+      "question": "When is the last time you did something technically illegal?",
+      "level": "Extreme"
+    },
+    {
+      "id": 66,
+      "question": "If you could pick anyone in the world to be president, who would you choose?",
+      "level": "Extreme"
+    },
+    {
+      "id": 67,
+      "question": "How many times do you wear your jeans before you wash them?",
+      "level": "Extreme"
+    },
+    {
+      "id": 68,
+      "question": "Do you pee in pools?",
+      "level": "Extreme"
+    },
+    {
+      "id": 69,
+      "question": "If someone went through your closet, what is the weirdest thing they'd find?",
+      "level": "Extreme"
+    },
+    {
+      "id": 70,
+      "question": "Have you ever lied about your age?",
+      "level": "Extreme"
+    },
+    {
+      "id": 71,
+      "question": "Besides your phone, what's the one item in your house you couldn't live without?",
+      "level": "Hard"
+    },
+    {
+      "id": 72,
+      "question": "What is the biggest fight you've ever been in with a friend?",
+      "level": "Hard"
+    },
+    {
+      "id": 73,
+      "question": "If you could be invisible for a day, what’s the first thing you would do?",
+      "level": "Hard"
+    },
+    {
+      "id": 74,
+      "question": "What’s the most embarrassing music you listen to?",
+      "level": "Hard"
+    },
+    {
+      "id": 75,
+      "question": "What’s one thing you love most about yourself?",
+      "level": "Hard"
+    },
+    {
+      "id": 76,
+      "question": "Who is your secret crush?",
+      "level": "Hard"
+    },
+    {
+      "id": 77,
+      "question": "Who is the last person you crept on social media?",
+      "level": "Hard"
+    },
+    {
+      "id": 78,
+      "question": "When was the last time you wet the bed?",
+      "level": "Hard"
+    },
+    {
+      "id": 79,
+      "question": "If a genie granted you three wishes, what would you ask for and why?",
+      "level": "Hard"
+    },
+    {
+      "id": 80,
+      "question": "If you had to only ever watch rom-comes or only watch scary movies for the rest of your life, which would you choose and why?",
+      "level": "Hard"
+    },
+    {
+      "id": 81,
+      "question": "Where is the weirdest place you've ever gone to the bathroom?",
+      "level": "Hard"
+    },
+    {
+      "id": 82,
+      "question": "Have you ever ghosted on someone?",
+      "level": "Hard"
+    },
+    {
+      "id": 83,
+      "question": "Which player would survive a zombie apocalypse and which would be the first to go?",
+      "level": "Hard"
+    },
+    {
+      "id": 84,
+      "question": "What excuse have you used before to get out plans?",
+      "level": "Hard"
+    },
+    {
+      "id": 85,
+      "question": "What's the longest you've ever slept?",
+      "level": "Hard"
+    },
+    {
+      "id": 86,
+      "question": "What’s the shortest you’ve ever slept?",
+      "level": "Hard"
+    },
+    {
+      "id": 87,
+      "question": "What's the most embarrassing thing you ever did on a date?",
+      "level": "Hard"
+    },
+    {
+      "id": 88,
+      "question": "How many selfies do you take a day?",
+      "level": "Hard"
+    },
+    {
+      "id": 89,
+      "question": "What was your favorite childhood show?",
+      "level": "Hard"
+    },
+    {
+      "id": 90,
+      "question": " If you had to change your name, what would your new first name be?",
+      "level": "Hard"
+    },
+    {
+      "id": 91,
+      "question": "If you could be a fictional character for a day, who would you choose?",
+      "level": "Hard"
+    },
+    {
+      "id": 92,
+      "question": "If you could date a fictional character, who would it be?",
+      "level": "Hard"
+    },
+    {
+      "id": 93,
+      "question": " What's your biggest fear? ",
+      "level": "Hard"
+    },
+    {
+      "id": 94,
+      "question": "What's one silly thing you can't live without? ",
+      "level": "Hard"
+    },
+    {
+      "id": 95,
+      "question": "Where was your favorite childhood vacation spot?",
+      "level": "Hard"
+    },
+    {
+      "id": 96,
+      "question": "What is the weirdest trend you've ever participated in?",
+      "level": "Hard"
     },
     {
       "id": 97,
-      "question": "Who was your first celebrity crush?",
-      "level": "Easy"
+      "question": "What’s the most scandalous thing you’ve ever done?",
+      "level": "Hard"
     },
     {
       "id": 98,
-      "question": "Have you ever revealed a friend's secret to someone else?",
-      "level": "Easy"
+      "question": "How would you rate your looks on a scale of 1 to 10?",
+      "level": "Hard"
     },
     {
       "id": 99,
-      "question": "How many kids do you want to have one day (or how many did you want to have growing up)?",
-      "level": "Easy"
+      "question": "What crime would you commit if there were no consequences?",
+      "level": "Hard"
     },
     {
       "id": 100,
-      "question": "If you could only eat one meal for the rest of your life, what would it be?",
-      "level": "Easy"
+      "question": "What’s the dumbest thing you’ve done to get someone’s attention?",
+      "level": "Hard"
     },
     {
       "id": 101,
-      "question": "What is a secret you had as a child that you never told your parents?",
-      "level": "Easy"
+      "question": "What's the drunkest you've ever been?",
+      "level": "Hard"
     },
     {
       "id": 102,
-      "question": "What is your favorite book of all time?",
-      "level": "Easy"
+      "question": "What's the most embarrassing thing you've ever done?",
+      "level": "Hard"
     },
     {
       "id": 103,
-      "question": "What is the last text message you sent your best friend?",
-      "level": "Easy"
-    },
-    {
-      "id": 104,
-      "question": "What is something you would do if you knew there were no consequences?",
-      "level": "Easy"
+      "question": " What's the silliest reason you've left a club early?",
+      "level": "Hard"
     },
     {
       "id": 105,
-      "question": "What is the worst physical pain you've ever been in?",
-      "level": "Easy"
+      "question": "What's the most disgusting thing you've ever done?",
+      "level": "Hard"
     },
     {
       "id": 106,
-      "question": "Personality-wise, are you more like your mom or your dad?",
-      "level": "Easy"
+      "question": "Tell me about your first kiss",
+      "level": "Hard"
     },
     {
       "id": 107,
-      "question": "When is the last time you apologized (and what did you do)?",
-      "level": "Easy"
+      "question": "What was the most inappropriate time you farted?",
+      "level": "Crazy"
     },
     {
       "id": 108,
-      "question": "Have you ever reported someone for doing something wrong (either to the police or at work/school)?",
-      "level": "Easy"
+      "question": "What's something you really hope your family never finds out about?",
+      "level": "Crazy"
     },
     {
       "id": 109,
-      "question": "If your house caught on fire and you could only save three things (besides people), what would they be?",
-      "level": "Easy"
+      "question": "Who do you think is the worst-dressed person in this room?",
+      "level": "Crazy"
     },
     {
       "id": 110,
-      "question": "If you could pick one other player to take with you to a deserted island, who would it be?",
-      "level": "Easy"
+      "question": "Have you ever practised kissing in a mirror?",
+      "level": "Crazy"
     },
     {
       "id": 111,
-      "question": "What sport or hobby do you wish you would've picked up as a child?",
-      "level": "Easy"
+      "question": "What's your worst fashion moment?",
+      "level": "Crazy"
     },
     {
       "id": 112,
-      "question": "Have you ever stolen anything?",
-      "level": "Easy"
+      "question": "What's your biggest pet peeve?",
+      "level": "Crazy"
     },
     {
       "id": 113,
-      "question": "Have you ever been kicked out of a store, restaurant, bar, event, etc.?",
-      "level": "Easy"
+      "question": "What TV character do you relate to the most?",
+      "level": "Crazy"
     },
     {
       "id": 114,
-      "question": "What is the worst date you've ever had?",
-      "level": "Easy"
+      "question": "Have you ever dined and dashed?",
+      "level": "Crazy"
     },
     {
       "id": 115,
-      "question": "What is the weirdest thing you've ever done in public?",
-      "level": "Easy"
+      "question": "Would you like to be a member of the mile-high club?",
+      "level": "Crazy"
     },
     {
       "id": 116,
-      "question": "What is the last excuse you used to cancel plans?",
-      "level": "Easy"
+      "question": "Would you consider going on Love Island?",
+      "level": "Crazy"
     },
     {
       "id": 117,
-      "question": "What is the biggest mistake you've ever made at school or work?",
-      "level": "Easy"
+      "question": "Have you ever lied about where you've been to a partner?",
+      "level": "Crazy"
     },
     {
       "id": 118,
-      "question": "Which player would survive the longest in a horror/apocalypse movie, and who would be the first one to die?",
-      "level": "Easy"
+      "question": "What's the worst meal you've ever cooked?",
+      "level": "Crazy"
     },
     {
       "id": 119,
-      "question": "What is the dirtiest room/area of your house?",
-      "level": "Easy"
+      "question": "If you could pick one other player to take with you to a deserted island, who would it be?",
+      "level": "Crazy"
     },
     {
       "id": 120,
-      "question": "Which of your family members annoys you the most?",
-      "level": "Easy"
+      "question": "Do you have any beauty regrets?",
+      "level": "Crazy"
     },
     {
       "id": 121,
-      "question": "When is the last time you cried?",
-      "level": "Easy"
+      "question": "If you suddenly had a million pounds, how would you spend it?",
+      "level": "Crazy"
     },
     {
       "id": 122,
-      "question": "When is the last time you made someone else cry?",
-      "level": "Easy"
-    },
-    {
-      "id": 123,
-      "question": "What is the longest you've ever gone without showering?",
-      "level": "Easy"
-    },
-    {
-      "id": 124,
-      "question": "What is the worst date you've ever been on?",
-      "level": "Easy"
-    },
-    {
-      "id": 125,
-      "question": "When is the last time you did something technically illegal?",
-      "level": "Easy"
-    },
-    {
-      "id": 126,
-      "question": "If you could pick anyone in the world to be president, who would you choose?",
-      "level": "Easy"
-    },
-    {
-      "id": 127,
-      "question": "How many times do you wear your jeans before you wash them?",
-      "level": "Easy"
-    },
-    {
-      "id": 128,
-      "question": "Do you pee in pools?",
-      "level": "Easy"
-    },
-    {
-      "id": 129,
-      "question": "If someone went through your closet, what is the weirdest thing they'd find?",
-      "level": "Easy"
-    },
-    {
-      "id": 130,
-      "question": "Have you ever lied about your age?",
-      "level": "Easy"
-    },
-    {
-      "id": 131,
-      "question": "Besides your phone, what's the one item in your house you couldn't live without?",
-      "level": "Easy"
-    },
-    {
-      "id": 132,
-      "question": "What is the biggest fight you've ever been in with a friend?",
-      "level": "Easy"
-    },
-    {
-      "id": 133,
-      "question": "If you could be invisible for a day, what’s the first thing you would do?",
-      "level": "Easy"
-    },
-    {
-      "id": 134,
-      "question": "What’s the most embarrassing music you listen to?",
-      "level": "Easy"
-    },
-    {
-      "id": 135,
-      "question": "What’s one thing you love most about yourself?",
-      "level": "Easy"
-    },
-    {
-      "id": 136,
-      "question": "Who is your secret crush?",
-      "level": "Easy"
-    },
-    {
-      "id": 137,
-      "question": "Who is the last person you crept on social media?",
-      "level": "Easy"
-    },
-    {
-      "id": 138,
-      "question": "When was the last time you wet the bed?",
-      "level": "Easy"
-    },
-    {
-      "id": 139,
-      "question": "If a genie granted you three wishes, what would you ask for and why?",
-      "level": "Easy"
-    },
-    {
-      "id": 140,
-      "question": "If you had to only ever watch rom-comes or only watch scary movies for the rest of your life, which would you choose and why?",
-      "level": "Easy"
-    },
-    {
-      "id": 141,
-      "question": "Where is the weirdest place you've ever gone to the bathroom?",
-      "level": "Easy"
-    },
-    {
-      "id": 142,
-      "question": "Have you ever ghosted on someone?",
-      "level": "Easy"
-    },
-    {
-      "id": 143,
-      "question": "Which player would survive a zombie apocalypse and which would be the first to go?",
-      "level": "Easy"
-    },
-    {
-      "id": 144,
-      "question": "What excuse have you used before to get out plans?",
-      "level": "Easy"
-    },
-    {
-      "id": 145,
-      "question": "What's the longest you've ever slept?",
-      "level": "Easy"
-    },
-    {
-      "id": 146,
-      "question": "What’s the shortest you’ve ever slept?",
-      "level": "Easy"
-    },
-    {
-      "id": 147,
-      "question": "What's the most embarrassing thing you ever did on a date?",
-      "level": "Easy"
-    },
-    {
-      "id": 148,
-      "question": "How many selfies do you take a day?",
-      "level": "Easy"
-    },
-    {
-      "id": 149,
-      "question": "What was your favorite childhood show?",
-      "level": "Easy"
-    },
-
-    {
-      "id": 150,
-      "question": " If you had to change your name, what would your new first name be?",
-      "level": "Easy"
-    },
-    {
-      "id": 151,
-      "question": "If you could be a fictional character for a day, who would you choose?",
-      "level": "Easy"
-    },
-    {
-      "id": 152,
-      "question": "If you could date a fictional character, who would it be?",
-      "level": "Easy"
-    },
-    {
-      "id": 153,
-      "question": " What's your biggest fear? ",
-      "level": "Easy"
-    },
-    {
-      "id": 153,
-      "question": "What's one silly thing you can't live without? ",
-      "level": "Easy"
-    },
-    {
-      "id": 154,
-      "question": "Where was your favorite childhood vacation spot?",
-      "level": "Easy"
-    },
-    {
-      "id": 155,
-      "question": "What is the weirdest trend you've ever participated in?",
-      "level": "Easy"
-    },
-    {
-      "id": 156,
-      "question": "What is the weirdest trend you've ever participated in?",
-      "level": "Easy"
+      "question": "Who in the group would you want by your side in a zombie apocalypse?",
+      "level": "Crazy"
     }
   ],
-
-
-//  easy -
-//  crazy - 12
-//  hard - 26
-//  moderate - 22
-
   "dare": [
     {
       "id": 1,
-      "question": "Dance like no one is watching for 30 seconds.",
-      "level": ""
+      "question": "Read out the last dirty text you sent",
+      "level": "Easy"
     },
     {
       "id": 2,
-      "question": "Sing the chorus of your favorite song out loud.",
-      "level": ""
+      "question": "Eat five spoonfuls of a condiment of your choice",
+      "level": "Easy"
     },
     {
       "id": 3,
-      "question": "Act like a cat for the next minute.",
-      "level": ""
+      "question": "Try to juggle 3 things of the group's choice",
+      "level": "Easy"
     },
     {
       "id": 4,
-      "question": "Call a random contact and tell them a joke.",
-      "level": ""
+      "question": "Pretend to be a food item of your choice",
+      "level": "Easy"
+    },
+    {
+      "id": 5,
+      "question": "Show the most embarrassing photo on your phone",
+      "level": "Easy"
+    },
+    {
+      "id": 6,
+      "question": "Show the last five people you texted and what the messages said",
+      "level": "Easy"
+    },
+    {
+      "id": 7,
+      "question": "Let the rest of the group DM someone from your Instagram account",
+      "level": "Easy"
+    },
+    {
+      "id": 8,
+      "question": "Eat a raw piece of garlic",
+      "level": "Easy"
+    },
+    {
+      "id": 9,
+      "question": "Do 100 squats",
+      "level": "Easy"
+    },
+    {
+      "id": 10,
+      "question": "Let the group look in your Instagram DMs",
+      "level": "Easy"
+    },
+    {
+      "id": 11,
+      "question": " Show us your screen time report",
+      "level": "Easy"
+    },
+    {
+      "id": 12,
+      "question": "Keep three ice cubes in your mouth until they melt",
+      "level": "Easy"
+    },
+    {
+      "id": 13,
+      "question": " Say something dirty to the person on your left",
+      "level": "Easy"
+    },
+    {
+      "id": 14,
+      "question": " Give a foot massage to the person on your right",
+      "level": "Easy"
+    },
+    {
+      "id": 15,
+      "question": "Put 10 different available liquids into a cup and drink it",
+      "level": "Easy"
+    },
+    {
+      "id": 16,
+      "question": "Yell out the first word that comes to your mind",
+      "level": "Easy"
+    },
+    {
+      "id": 17,
+      "question": "Give a lap dance to someone of your choice",
+      "level": "Easy"
+    },
+    {
+      "id": 18,
+      "question": "Repeat everything the person on your right is saying until it's your turn again",
+      "level": "Easy"
+    },
+    {
+      "id": 19,
+      "question": "Remove four items of clothing",
+      "level": "Easy"
+    },
+    {
+      "id": 20,
+      "question": "Like the first 15 posts on your Facebook newsfeed",
+      "level": "Easy"
+    },
+    {
+      "id": 21,
+      "question": " Eat a spoonful of mustard",
+      "level": "Easy"
+    },
+    {
+      "id": 22,
+      "question": "Keep your eyes closed until it's your go again",
+      "level": "Easy"
+    },
+    {
+      "id": 23,
+      "question": "Try and get all the the toes on one foot in your mouth",
+      "level": "Easy"
+    },
+    {
+      "id": 24,
+      "question": "Empty out your wallet/purse and show everyone what's inside",
+      "level": "Easy"
+    },
+    {
+      "id": 25,
+      "question": "Pretend to be the person to your right for 10 minutes",
+      "level": "Easy"
+    },
+    {
+      "id": 26,
+      "question": "Eat a snack without using your hands",
+      "level": "Easy"
+    },
+    {
+      "id": 27,
+      "question": "Whisper a secret to the person on your left",
+      "level": "Easy"
+    },
+    {
+      "id": 28,
+      "question": "Say two honest things about everyone else in the group",
+      "level": "Easy"
+    },
+    {
+      "id": 29,
+      "question": "Twerk for a minute",
+      "level": "Easy"
+    },
+    {
+      "id": 30,
+      "question": "Try and make the group laugh as quickly as possible",
+      "level": "Easy"
+    },
+    {
+      "id": 31,
+      "question": "Try to put your whole fist in your mouth",
+      "level": "Easy"
+    },
+    {
+      "id": 32,
+      "question": "Let another person in the group touch up your makeup",
+      "level": "Easy"
+    },
+    {
+      "id": 33,
+      "question": "Tell everyone an embarrassing story about yourself",
+      "level": "Easy"
+    },
+    {
+      "id": 34,
+      "question": "Say everything in a whisper for the next 10 minutes",
+      "level": "Easy"
+    },
+    {
+      "id": 35,
+      "question": "Talk in an American accent for the rest of the evening",
+      "level": "Easy"
+    },
+    {
+      "id": 36,
+      "question": "Do your best celebrity impression",
+      "level": "Extreme"
+    },
+    {
+      "id": 37,
+      "question": "Play air guitar for 2 minutes straight",
+      "level": "Extreme"
+    },
+    {
+      "id": 38,
+      "question": "Post the oldest selfie on your phone on Instagram Stories",
+      "level": "Extreme"
+    },
+    {
+      "id": 39,
+      "question": "Tell the saddest story you know",
+      "level": "Extreme"
+    },
+    {
+      "id": 40,
+      "question": "Howl like a wolf for two minutes",
+      "level": "Extreme"
+    },
+    {
+      "id": 41,
+      "question": "Dance without music for two minutes",
+      "level": "Extreme"
+    },
+    {
+      "id": 42,
+      "question": "Pole dance with an imaginary pole",
+      "level": "Extreme"
+    },
+    {
+      "id": 43,
+      "question": "Belt out the chorus of a cheesy ballad at full volume",
+      "level": "Extreme"
+    },
+    {
+      "id": 44,
+      "question": "Let someone else tickle you and try not to laugh",
+      "level": "Extreme"
+    },
+    {
+      "id": 45,
+      "question": "Put as many snacks into your mouth at once as you can",
+      "level": "Extreme"
+    },
+    {
+      "id": 46,
+      "question": "Scroll through your phone book until someone says stop. You either have to call or delete that person.",
+      "level": "Extreme"
+    },
+    {
+      "id": 47,
+      "question": "Put your clothing on backwards for the rest of the evening",
+      "level": "Extreme"
+    },
+    {
+      "id": 48,
+      "question": "Down your drink (responsibly)",
+      "level": "Extreme"
+    },
+    {
+      "id": 49,
+      "question": "Try and make yourself cry in front of the group",
+      "level": "Extreme"
+    },
+    {
+      "id": 50,
+      "question": "Tell the group two truths and a lie, and they have to guess which one the lie is",
+      "level": "Extreme"
+    },
+    {
+      "id": 51,
+      "question": "Attempt to impersonate everyone in the room",
+      "level": "Extreme"
+    },
+    {
+      "id": 52,
+      "question": "Reply to the first five Instagram Stories on your timeline",
+      "level": "Extreme"
+    },
+    {
+      "id": 53,
+      "question": "Share the first celebrity on your timeline's Instagram to your Story",
+      "level": "Extreme"
+    },
+    {
+      "id": 54,
+      "question": " Put on as many layers as possible in 60 seconds",
+      "level": "Extreme"
+    },
+    {
+      "id": 55,
+      "question": " Fill your mouth with drink and gargle your answer to the next Truth",
+      "level": "Extreme"
+    },
+    {
+      "id": 56,
+      "question": "Make another player jump in the next 10 minutes",
+      "level": "Extreme"
+    },
+    {
+      "id": 57,
+      "question": "Smile as widely as you can and hold it for two minutes",
+      "level": "Extreme"
+    },
+    {
+      "id": 58,
+      "question": "Hold your drink with two hands for the rest of the evening",
+      "level": "Extreme"
+    },
+    {
+      "id": 59,
+      "question": "Attempt the first TikTok dance on your for you page",
+      "level": "Extreme"
+    },
+    {
+      "id": 60,
+      "question": "Sit on the floor for the rest of the evening",
+      "level": "Extreme"
+    },
+    {
+      "id": 61,
+      "question": "Put on make-up without a mirror and leave it like that for the rest of the game",
+      "level": "Extreme"
+    },
+    {
+      "id": 62,
+      "question": "Give a personalised insult to everyone in the room",
+      "level": "Extreme"
+    },
+    {
+      "id": 63,
+      "question": "Try not to laugh for the next 10 minutes",
+      "level": "Extreme"
+    },
+    {
+      "id": 64,
+      "question": "For the next 10 minutes, every time someone asks you something, respond with a bark",
+      "level": "Extreme"
+    },
+    {
+      "id": 65,
+      "question": "Let the person next to you wax you wherever they want",
+      "level": "Extreme"
+    },
+    {
+      "id": 66,
+      "question": "Call the first person in your phonebook and howl like a wolf",
+      "level": "Extreme"
+    },
+    {
+      "id": 67,
+      "question": "Eat a raw egg",
+      "level": "Extreme"
+    },
+    {
+      "id": 68,
+      "question": "Do a Facebook Live and say everything your friends tell you to",
+      "level": "Extreme"
+    },
+    {
+      "id": 69,
+      "question": "Update your relationship status to 'engaged' on Facebook",
+      "level": "Extreme"
+    },
+    {
+      "id": 70,
+      "question": "Read the last text message you sent out loud.",
+      "level": "Extreme"
+    },
+    {
+      "id": 71,
+      "question": " Show the weirdest item you have in your purse/pockets.",
+      "level": "Hard"
+    },
+    {
+      "id": 72,
+      "question": "Call the first person in your contacts list and sing them Happy Birthday.",
+      "level": "Hard"
+    },
+    {
+      "id": 73,
+      "question": "Do your best impression of a fish out of water.",
+      "level": "Hard"
+    },
+    {
+      "id": 74,
+      "question": "Do as many push-ups as you can in one minute.",
+      "level": "Hard"
+    },
+    {
+      "id": 75,
+      "question": "Give a one-word roast to each other player.",
+      "level": "Hard"
+    },
+    {
+      "id": 76,
+      "question": "Speak in an Australian accent until your next turn.",
+      "level": "Hard"
+    },
+    {
+      "id": 77,
+      "question": "Let another player tickle you but don't laugh!",
+      "level": "Hard"
+    },
+    {
+      "id": 78,
+      "question": "Spin in a swivel chair for 30 seconds and then try to walk a straight line.",
+      "level": "Hard"
+    },
+    {
+      "id": 79,
+      "question": " Go outside and sing You are My Sunshine at full volume.",
+      "level": "Hard"
+    },
+    {
+      "id": 80,
+      "question": "Let another player draw a tattoo on your arm in permanent marker.",
+      "level": "Hard"
+    },
+    {
+      "id": 81,
+      "question": "Hold the plank position until it's your turn again.",
+      "level": "Hard"
+    },
+    {
+      "id": 82,
+      "question": "Tell each player who you think their celebrity look alike is.",
+      "level": "Hard"
+    },
+    {
+      "id": 83,
+      "question": "Show off your best dance moves for the full duration of a song.",
+      "level": "Hard"
+    },
+    {
+      "id": 84,
+      "question": "Narrate the game in a newscaster voice for three turns. ",
+      "level": "Hard"
+    },
+    {
+      "id": 85,
+      "question": "Walk next door with a measuring cup and ask for a cup of sugar.",
+      "level": "Hard"
+    },
+    {
+      "id": 86,
+      "question": "Switch clothes with another player for the rest of the game.",
+      "level": "Hard"
+    },
+    {
+      "id": 87,
+      "question": " Put on a blindfold and touch each players' face until you can guess who each player is.",
+      "level": "Hard"
+    },
+    {
+      "id": 88,
+      "question": "Let another player pour a glass of water on your head.",
+      "level": "Hard"
+    },
+    {
+      "id": 89,
+      "question": " Coordinate a birthday party with an online sign up. View an Example",
+      "level": "Hard"
+    },
+    {
+      "id": 90,
+      "question": "Give a shoulder rub to the player to your right (if they are comfortable).",
+      "level": "Hard"
+    },
+    {
+      "id": 91,
+      "question": "Attempt to juggle two or three items of the asker's choosing.",
+      "level": "Hard"
+    },
+    {
+      "id": 92,
+      "question": "Perform a dramatic version of a monologue from a favorite TV show or movie.",
+      "level": "Hard"
+    },
+    {
+      "id": 93,
+      "question": "Show the most embarrassing photo on your phone.",
+      "level": "Hard"
+    },
+    {
+      "id": 94,
+      "question": "Comment a fire emoji on the first five pictures on your Instagram feed.",
+      "level": "Hard"
+    },
+    {
+      "id": 95,
+      "question": "Do an impression of another player until your next turn. ",
+      "level": "Hard"
+    },
+    {
+      "id": 96,
+      "question": "Try to drink a glass of water without using your hands.",
+      "level": "Hard"
+    },
+    {
+      "id": 97,
+      "question": "Allow the other players to blindfold you and try to guess three food items from the pantry just by smell.",
+      "level": "Hard"
+    },
+    {
+      "id": 98,
+      "question": "Do your best interpretive dance/gymnastics floor routine.",
+      "level": "Hard"
+    },
+    {
+      "id": 99,
+      "question": "Go outside and do your best wolf howl at the moon.\n",
+      "level": "Hard"
+    },
+    {
+      "id": 100,
+      "question": "Post an unflattering selfie to your favorite social media account.",
+      "level": "Hard"
+    },
+    {
+      "id": 101,
+      "question": "Talk and act like a celebrity until the group can guess who you are (this could go multiple turns!)",
+      "level": "Hard"
+    },
+    {
+      "id": 102,
+      "question": "Go outside and pretend to mow grass with an invisible mower — sounds and all.",
+      "level": "Hard"
+    },
+    {
+      "id": 103,
+      "question": "Act out a commercial for a product chosen by the other players.",
+      "level": "Hard"
+    },
+    {
+      "id": 105,
+      "question": "Sing instead of speaking any time you talk for three turns.",
+      "level": "Hard"
+    },
+    {
+      "id": 106,
+      "question": "Make a silly face and keep it that way until someone in the group laughs.",
+      "level": "Hard"
+    },
+    {
+      "id": 107,
+      "question": "Do a freestyle rap about the other players for one minute.",
+      "level": "Crazy"
+    },
+    {
+      "id": 108,
+      "question": "Show the group your internet search history.",
+      "level": "Crazy"
+    },
+    {
+      "id": 109,
+      "question": "Let another player style your hair and leave it that way for the rest of the game.",
+      "level": "Crazy"
+    },
+    {
+      "id": 110,
+      "question": "Video chat the person of your choice but pick your nose through the entire conversation.",
+      "level": "Crazy"
+    },
+    {
+      "id": 111,
+      "question": "Put your shoes on the wrong feet and keep them there for the rest of the game.",
+      "level": "Crazy"
+    },
+    {
+      "id": 112,
+      "question": "Call a random acquaintance and tell them you want to break up.",
+      "level": "Crazy"
+    },
+    {
+      "id": 113,
+      "question": "Let the other players pose you and remain in that position until your next turn.",
+      "level": "Crazy"
+    },
+    {
+      "id": 114,
+      "question": "Allow someone else in the group to blindfold you and feed you one item out of the fridge.",
+      "level": "Crazy"
+    },
+    {
+      "id": 115,
+      "question": "Lead the group in a mini yoga class for one minute.",
+      "level": "Crazy"
+    },
+    {
+      "id": 116,
+      "question": "How old are you? Whatever your age is, do that many squats.",
+      "level": "Crazy"
+    },
+    {
+      "id": 117,
+      "question": "Perform a dance routine to a boy band song of the group's choice.",
+      "level": "Crazy"
+    },
+    {
+      "id": 118,
+      "question": "Let another player draw a washable marker mustache on you.",
+      "level": "Crazy"
+    },
+    {
+      "id": 119,
+      "question": "Whether you're ready to tell the truth or do an outrageous.",
+      "level": "Crazy"
+    },
+    {
+      "id": 120,
+      "question": "Try to juggle 3 things of the group's choice",
+      "level": "Crazy"
+    },
+    {
+      "id": 121,
+      "question": "Show us your screen time report",
+      "level": "Crazy"
+    },
+    {
+      "id": 122,
+      "question": "Keep three ice cubes in your mouth until they melt",
+      "level": "Crazy"
     }
   ]
 }

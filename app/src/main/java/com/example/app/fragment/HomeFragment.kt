@@ -11,6 +11,7 @@ import com.example.app.R
 import com.example.app.adapter.HomeAdapter
 import com.example.app.adapter.HomeList
 import com.example.app.databinding.FragmentHomeBinding
+import com.example.app.helper.Const
 
 class HomeFragment : Fragment() {
 
@@ -18,8 +19,7 @@ class HomeFragment : Fragment() {
     private lateinit var homeAdapter: HomeAdapter
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
+        inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?
     ): View {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
 
@@ -36,11 +36,19 @@ class HomeFragment : Fragment() {
 
     private fun getItems(): List<HomeList> {
         val searchList = mutableListOf<HomeList>()
-        searchList.add(HomeList(R.string.text_fun, R.drawable.icon_rainbow))
-        searchList.add(HomeList(R.string.text_crazy, R.drawable.icon_fire))
-        searchList.add(HomeList(R.string.text_extreme, R.drawable.icon_confetti))
-        searchList.add(HomeList(R.string.text_party_mode, R.drawable.icon_cheers))
-        searchList.add(HomeList(R.string.text_custom_pack, R.drawable.icon_wrench))
+        searchList.add(HomeList(R.string.text_fun, R.drawable.icon_rainbow, Const.LEVEL_EASY))
+        searchList.add(HomeList(R.string.text_crazy, R.drawable.icon_fire, Const.LEVEL_CRAZY))
+        searchList.add(
+            HomeList(
+                R.string.text_extreme, R.drawable.icon_confetti, Const.LEVEL_EXTREME
+            )
+        )
+        searchList.add(HomeList(R.string.text_party_mode, R.drawable.icon_cheers, Const.LEVEL_HARD))
+        searchList.add(
+            HomeList(
+                R.string.text_custom_pack, R.drawable.icon_wrench, Const.LEVEL_CUSTOM
+            )
+        )
         return searchList
     }
 
@@ -49,9 +57,7 @@ class HomeFragment : Fragment() {
         binding.addPlayerButton.setOnClickListener {
             val fragment = AddPeopleFragment()
             requireActivity().supportFragmentManager.beginTransaction()
-                .add(R.id.fragment_container, fragment)
-                .addToBackStack(fragment.tag)
-                .commit()
+                .add(R.id.fragment_container, fragment).addToBackStack(fragment.tag).commit()
         }
 
         binding.settingsButton.setOnClickListener {

@@ -75,10 +75,11 @@
 
                     <TextView
                         android:id="@+id/game_text"
+                        android:paddingVertical="20dp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/regular"
-                        android:padding="8dp"
+                        android:paddingStart="15dp"
                         android:text="Change theme"
                         android:textColor="@color/gray_white"
                         android:textSize="25sp" />
@@ -107,9 +108,10 @@
 
                     <TextView
                         android:layout_width="match_parent"
+                        android:paddingVertical="20dp"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/regular"
-                        android:padding="8dp"
+                        android:paddingStart="15dp"
                         android:text="Language"
                         android:textColor="@color/gray_white"
                         android:textSize="25sp" />
@@ -137,8 +139,9 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:paddingVertical="20dp"
                         android:fontFamily="@font/regular"
-                        android:padding="8dp"
+                        android:paddingStart="15dp"
                         android:text="Skip tasks"
                         android:textColor="@color/gray_white"
                         android:textSize="25sp" />
@@ -167,7 +170,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/regular"
-                        android:padding="8dp"
+                        android:paddingVertical="20dp"
+                        android:paddingStart="15dp"
                         android:text="Notifications"
                         android:textColor="@color/gray_white"
                         android:textSize="25sp" />
@@ -196,7 +200,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/regular"
-                        android:padding="8dp"
+                        android:paddingVertical="20dp"
+                        android:paddingStart="15dp"
                         android:text="Give a rating"
                         android:textColor="@color/gray_white"
                         android:textSize="25sp" />
@@ -227,7 +232,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/regular"
-                        android:padding="8dp"
+                        android:paddingStart="15dp"
+                        android:paddingVertical="20dp"
                         android:text="Information"
                         android:textColor="@color/gray_white"
                         android:textSize="25sp" />

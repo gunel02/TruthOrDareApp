@@ -152,6 +152,7 @@
             android:layout_height="wrap_content">
 
             <com.google.android.material.card.MaterialCardView
+                android:id="@+id/add_custom_pack_button"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_gravity="center"

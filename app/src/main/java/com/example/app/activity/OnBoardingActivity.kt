@@ -14,14 +14,27 @@ class OnBoardingActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+//
+//        binding = ActivityOnBoardingBinding.inflate(layoutInflater)
+//
+//        setContentView(binding.root)
+//        val intent = Intent(this, SelectLanguageActivity::class.java)
+//        startActivity(intent)
+//
 
         binding = ActivityOnBoardingBinding.inflate(layoutInflater)
 
-        val intent = Intent(this, SelectLanguageActivity::class.java)
-        startActivity(intent)
+        val fragment = SelectLanguageFragment()
+        val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
+        transaction.add(R.id.fragment_container, fragment)
+        transaction.commit()
+//        val intent = Intent(this, SelectLanguageActivity::class.java)
+//        startActivity(intent)
 
         setContentView(binding.root)
     }
 }
+
+
 
 
